@@ -2,9 +2,19 @@ from fastapi import FastAPI, HTTPException
 import json
 import os
 from analysis import analyze_underserved
+from fastapi.middleware.cors import CORSMiddleware
 
 # print("Analyzed underserved: ", analyze_underserved())
 app = FastAPI(title="Vivaro API")
+
+# Configure CORS to allow requests from your frontend (http://127.0.0.1:5500)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5500"],  
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"],  
+)
 
 # Define file paths
 SCHOOLS_FILE = "data/schools-data.geojson"
