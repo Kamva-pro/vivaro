@@ -6,16 +6,14 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-# Load processed city and facility data
 cities = gpd.read_file("data/places.geojson")
 schools = gpd.read_file("data/schools-data.geojson")
 healthcare = gpd.read_file("data/healthcare-data.geojson")
 
-MIN_SCHOOLS_PER_KM2 = 1 / 10  # 🔍 1 primary school per 10 km²
-MIN_CLINICS_PER_KM2 = 1 / 20  # 🔍 1 clinic per 20 km²
-THRESHOLD_KM = 10  # Max distance from city center to facility
+MIN_SCHOOLS_PER_KM2 = 1 / 10  
+MIN_CLINICS_PER_KM2 = 1 / 20  
+THRESHOLD_KM = 10  
 
-# Prepare BallTree spatial index for fast facility lookup
 school_coords = np.array([[p.geometry.y, p.geometry.x] for _, p in schools.iterrows()])
 healthcare_coords = np.array([[p.geometry.y, p.geometry.x] for _, p in healthcare.iterrows()])
 

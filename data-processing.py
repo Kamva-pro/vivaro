@@ -1,7 +1,6 @@
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-# Load Data
 schools = gpd.read_file('cleaned-schools-data.geojson')
 print("Number of schools loaded:", len(schools))
 print(schools.head())
