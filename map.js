@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Create a custom red icon for underserved communities
 var largeRedIcon = L.icon({
     iconUrl: "assets/landmark-icon.png",
-    iconSize: [30, 30],
+    iconSize: [15, 15],
     iconAnchor: [15, 30],
     popupAnchor: [1, -34]
 });
@@ -44,6 +44,17 @@ function fetchUnderservedData() {
                 }]
             }
         });
+
+        // Collect heatmap data
+        let heatData = data.underserved.map(c => [c.coords[0], c.coords[1], 0.7]); // Format: [lat, lon, intensity]
+
+        // Add heatmap layer
+        var heat = L.heatLayer(heatData, {
+            radius: 25,  // Increase for wider spread
+            blur: 15,
+            maxZoom: 10,
+            gradient: { 0.2: "blue", 0.4: "yellow", 0.6: "orange", 1: "red" } // Color transition
+        }).addTo(map);
 
         // Add markers for underserved communities
         data.underserved.forEach(community => {
