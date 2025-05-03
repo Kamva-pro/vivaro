@@ -30,12 +30,11 @@ def fast_nearest_facility(city_coords, tree):
 
 def analyze_underserved():
     underserved_cities = []
-    total_cities = len(cities)
-
+    
     for city in cities.itertuples():
-        city_coords = [city.geometry.y, city.geometry.x]
+        city_coords = [city.geometry.y, city.geometry.x]  # ✅ Convert Point to List
         city_name = city.name
-        city_area_km2 = city.geometry.area / 1e6  # Convert area to km²
+        city_area_km2 = city.geometry.area / 1e6
         
         num_schools = schools.within(city.geometry).sum()
         num_healthcare = healthcare.within(city.geometry).sum()
@@ -43,11 +42,11 @@ def analyze_underserved():
         school_density = num_schools / city_area_km2 if city_area_km2 > 0 else 0
         healthcare_density = num_healthcare / city_area_km2 if city_area_km2 > 0 else 0
 
-        # Compute nearest facility distances
+        # Compute distances to nearest facilities
         school_dist = fast_nearest_facility(city_coords, school_tree)
         healthcare_dist = fast_nearest_facility(city_coords, healthcare_tree)
 
-        # Flag underserved cities only if both density and distance thresholds fail
+        # Flag underserved cities
         if (school_density < MIN_SCHOOLS_PER_KM2 and school_dist > THRESHOLD_KM) or \
            (healthcare_density < MIN_CLINICS_PER_KM2 and healthcare_dist > THRESHOLD_KM):
             underserved_cities.append({
@@ -61,4 +60,5 @@ def analyze_underserved():
             })
 
     logging.info(f"Identified {len(underserved_cities)} underserved communities.")
-    return underserved_cities, total_cities
+    return underserved_cities  # ✅ Do NOT return the entire cities dataset
+   

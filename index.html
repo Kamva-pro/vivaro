@@ -40,13 +40,23 @@
 
     <!-- Stats Panel -->
     <div id="stats">
-        <h2>Underserved Community Stats</h2>
-        <p><strong>Total Cities:</strong> <span id="totalCities">Loading...</span></p>
-        <p><strong>Underserved Communities:</strong> <span id="underservedCount">Loading...</span></p>
-        <p><strong>Underserved in Schools:</strong> <span id="schoolUnderserved">Loading...</span></p>
-        <p><strong>Underserved in Healthcare:</strong> <span id="healthcareUnderserved">Loading...</span></p>
-        <canvas id="statsChart"></canvas> <!-- Chart to visualize stats -->
+        <!-- 🔍 Search Bar (Remains Visible) -->
+        <h2>Search for a City</h2>
+        <input type="text" id="searchBox" placeholder="Enter city name..." />
+        <button onclick="searchCity()">Search</button>
+    
+        <!-- 📊 City Search Results (Updates Dynamically) -->
+        <div id="searchResults">
+            <h2>Underserved Community Stats</h2>
+            <p><strong>Total Cities:</strong> <span id="totalCities">Loading...</span></p>
+            <p><strong>Underserved Cities:</strong> <span id="underservedCount">Loading...</span></p>
+            <p><strong>Underserved in Schools:</strong> <span id="schoolUnderserved">Loading...</span></p>
+            <p><strong>Underserved in Healthcare:</strong> <span id="healthcareUnderserved">Loading...</span></p>
+            <canvas id="statsChart"></canvas>
+        </div>
     </div>
+    
+    
 
     <!-- Leaflet & Map Logic -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
