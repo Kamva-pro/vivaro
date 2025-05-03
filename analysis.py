@@ -1,55 +1,64 @@
 import geopandas as gpd
 import numpy as np
+from shapely.geometry import Point
 from sklearn.neighbors import BallTree
 import logging
 
-# Enable logging for debugging
 logging.basicConfig(level=logging.INFO)
 
-# Distance threshold for underserved classification
-THRESHOLD_KM = 10  
+# Load processed city and facility data
+cities = gpd.read_file("data/places.geojson")
+schools = gpd.read_file("data/schools-data.geojson")
+healthcare = gpd.read_file("data/healthcare-data.geojson")
+
+# Urban planning thresholds based on facility density per area
+MIN_SCHOOLS_PER_KM2 = 1 / 10  # 🔍 1 primary school per 10 km²
+MIN_CLINICS_PER_KM2 = 1 / 20  # 🔍 1 clinic per 20 km²
+THRESHOLD_KM = 10  # Max distance from city center to facility
+
+# Prepare BallTree spatial index for fast facility lookup
+school_coords = np.array([[p.geometry.y, p.geometry.x] for _, p in schools.iterrows()])
+healthcare_coords = np.array([[p.geometry.y, p.geometry.x] for _, p in healthcare.iterrows()])
+
+school_tree = BallTree(np.radians(school_coords), metric='haversine')
+healthcare_tree = BallTree(np.radians(healthcare_coords), metric='haversine')
+
+def fast_nearest_facility(city_coords, tree):
+    """Find the nearest facility using spatial indexing."""
+    dist, _ = tree.query([np.radians(city_coords)], k=1)
+    return dist[0][0] * 6371  # Convert radians to kilometers
 
 def analyze_underserved():
-    """Run AI analysis dynamically when FastAPI calls it."""
-    
-    # Load data fresh on every request
-    cities = gpd.read_file("data/places.geojson")
-    schools = gpd.read_file("data/schools-data.geojson")
-    healthcare = gpd.read_file("data/healthcare-data.geojson")
-
-    # Convert facility locations to NumPy arrays for indexing
-    school_coords = np.array([[p.geometry.y, p.geometry.x] for _, p in schools.iterrows()])
-    healthcare_coords = np.array([[p.geometry.y, p.geometry.x] for _, p in healthcare.iterrows()])
-
-    # Build BallTree spatial index
-    school_tree = BallTree(np.radians(school_coords), metric='haversine')
-    healthcare_tree = BallTree(np.radians(healthcare_coords), metric='haversine')
-
-    def fast_nearest_facility(city_coords, tree):
-        """Find the nearest facility using spatial indexing."""
-        dist, _ = tree.query([np.radians(city_coords)], k=1)  # Get nearest neighbor in radians
-        return dist[0][0] * 6371  # Convert to kilometers
-
-    # Identify underserved cities dynamically
     underserved_cities = []
+    total_cities = len(cities)
 
-    for i, city in enumerate(cities.itertuples()):
+    for city in cities.itertuples():
         city_coords = [city.geometry.y, city.geometry.x]
+        city_name = city.name
+        city_area_km2 = city.geometry.area / 1e6  # Convert area to km²
         
-        # Print progress every 100 cities
-        if i % 100 == 0:
-            logging.info(f"Processing city {i}/{len(cities)}: {city.name}")
+        num_schools = schools.within(city.geometry).sum()
+        num_healthcare = healthcare.within(city.geometry).sum()
 
+        school_density = num_schools / city_area_km2 if city_area_km2 > 0 else 0
+        healthcare_density = num_healthcare / city_area_km2 if city_area_km2 > 0 else 0
+
+        # Compute nearest facility distances
         school_dist = fast_nearest_facility(city_coords, school_tree)
         healthcare_dist = fast_nearest_facility(city_coords, healthcare_tree)
-        
-        if school_dist > THRESHOLD_KM or healthcare_dist > THRESHOLD_KM:
+
+        # Flag underserved cities only if both density and distance thresholds fail
+        if (school_density < MIN_SCHOOLS_PER_KM2 and school_dist > THRESHOLD_KM) or \
+           (healthcare_density < MIN_CLINICS_PER_KM2 and healthcare_dist > THRESHOLD_KM):
             underserved_cities.append({
-                "name": city.name,
+                "name": city_name,
                 "coords": city_coords,
                 "school_dist": round(school_dist, 2),
-                "healthcare_dist": round(healthcare_dist, 2)
+                "healthcare_dist": round(healthcare_dist, 2),
+                "school_density": round(school_density, 3),
+                "healthcare_density": round(healthcare_density, 3),
+                "city_area_km2": round(city_area_km2, 2)
             })
 
     logging.info(f"Identified {len(underserved_cities)} underserved communities.")
-    return underserved_cities
+    return underserved_cities, total_cities

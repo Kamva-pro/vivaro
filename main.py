@@ -42,8 +42,11 @@ def get_healthcare():
 
 @app.get("/underserved")
 def get_underserved_communities():
-    results = analyze_underserved()  
+    results, total_cities = analyze_underserved()  
     if not results:  
         return {"error": "No underserved communities found"}
     print("Found ")
-    return {"underserved": results}
+    return {
+            "total_cities": total_cities, 
+            "underserved": results
+        }
