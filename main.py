@@ -1,7 +1,9 @@
 from fastapi import FastAPI, HTTPException
 import json
 import os
+from analysis import analyze_underserved
 
+# print("Analyzed underserved: ", analyze_underserved())
 app = FastAPI(title="Vivaro API")
 
 # Define file paths
@@ -27,3 +29,11 @@ def get_schools():
 @app.get("/healthcare")
 def get_healthcare():
     return load_geojson(HEALTHCARE_FILE)
+
+@app.get("/underserved")
+def get_underserved_communities():
+    results = analyze_underserved()  
+    if not results:  
+        return {"error": "No underserved communities found"}
+    print("Found ")
+    return {"underserved": results}
