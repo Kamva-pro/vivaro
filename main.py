@@ -8,6 +8,8 @@ from shapely.geometry import Point
 from analysis import analyze_underserved, fast_nearest_facility, cities, schools, healthcare, school_tree, healthcare_tree, MIN_SCHOOLS_PER_KM2, MIN_CLINICS_PER_KM2, THRESHOLD_KM
 from fastapi.middleware.cors import CORSMiddleware
 
+from ai_recommendations import generate_recommendations
+
 # print("Analyzed underserved: ", analyze_underserved())
 app = FastAPI(title="Vivaro API")
 
@@ -47,13 +49,19 @@ def get_healthcare():
 @app.get("/underserved")
 def get_underserved_communities():
     results = analyze_underserved()  
-    
+    recommendations = generate_recommendations()
+
     if not results:
         return {"error": "No underserved communities found"}
+    
+    if not recommendations:
+        return {"error:" "No recommendations found"}
+    
 
     return {
         "total_cities": len(cities),  
-        "underserved": results
+        "underserved": results,
+        "recommendations": recommendations
     }
 
 @app.get("/search")

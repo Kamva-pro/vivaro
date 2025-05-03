@@ -1,0 +1,6774 @@
+[
+    {
+        "name": "Cookhouse",
+        "coords": [
+            -32.7441338,
+            25.802622
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Heidelberg",
+        "coords": [
+            -34.089958,
+            20.9585895
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Riviersonderend",
+        "coords": [
+            -34.150278,
+            19.914444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Botrivier",
+        "coords": [
+            -34.226759,
+            19.202317
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Caledon",
+        "coords": [
+            -34.23,
+            19.428333
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ]
+        }
+    },
+    {
+        "name": "Hermanus",
+        "coords": [
+            -34.4175,
+            19.2361111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Pearly Beach",
+        "coords": [
+            -34.667345,
+            19.503841
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Kleinmond",
+        "coords": [
+            -34.338889,
+            19.025278
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Saldanha",
+        "coords": [
+            -32.9977778,
+            17.9455556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Alexandria",
+        "coords": [
+            -33.6530556,
+            26.4094444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Arniston",
+        "coords": [
+            -34.668056,
+            20.231111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Hofmeyr",
+        "coords": [
+            -31.653623,
+            25.804688
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Moorreesburg",
+        "coords": [
+            -33.155278,
+            18.656389
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "eLukwatini",
+        "coords": [
+            -26.0483253,
+            30.7947249
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Msauli",
+        "coords": [
+            -26.0092555,
+            31.0783596
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Carolina",
+        "coords": [
+            -26.068889,
+            30.116389
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Bergville",
+        "coords": [
+            -28.731111,
+            29.351667
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Nqutu",
+        "coords": [
+            -28.2166667,
+            30.6733333
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Seymour",
+        "coords": [
+            -32.5555556,
+            26.7661111
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Amsterdam",
+        "coords": [
+            -26.626667,
+            30.666389
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Villiersdorp",
+        "coords": [
+            -33.990278,
+            19.29
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Franschhoek",
+        "coords": [
+            -33.909167,
+            19.119444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Barrydale",
+        "coords": [
+            -33.904124,
+            20.721356
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Velddrif",
+        "coords": [
+            -32.785556,
+            18.180556
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Tulbagh",
+        "coords": [
+            -33.285059,
+            19.140667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Darling",
+        "coords": [
+            -33.376426,
+            18.379189
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Hopefield",
+        "coords": [
+            -33.063397,
+            18.349814
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Yzerfontein",
+        "coords": [
+            -33.346104,
+            18.160208
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Grabouw",
+        "coords": [
+            -34.153056,
+            19.013889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Langebaan",
+        "coords": [
+            -33.090717,
+            18.034889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Eksteenfontein",
+        "coords": [
+            -28.824047,
+            17.254935
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Aberfeldy",
+        "coords": [
+            -28.2297222,
+            28.8577778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Addo",
+        "coords": [
+            -33.5548139,
+            25.6940626
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Aggeneys",
+        "coords": [
+            -29.2370676,
+            18.8406534
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Albert Falls",
+        "coords": [
+            -29.4344773,
+            30.4279085
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Alexander Bay",
+        "coords": [
+            -28.594787,
+            16.482647
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Amersfoort",
+        "coords": [
+            -27.008333,
+            29.8675
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Arnot",
+        "coords": [
+            -25.9455556,
+            29.8083333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Augrabies",
+        "coords": [
+            -28.6599925,
+            20.4305485
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Babanango",
+        "coords": [
+            -28.376667,
+            31.085833
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Badplaas",
+        "coords": [
+            -25.958247,
+            30.568142
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ballengeich",
+        "coords": [
+            -27.8969443,
+            29.973611
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Banks",
+        "coords": [
+            -26.0013889,
+            29.4583333
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Barsheba",
+        "coords": [
+            -33.4144444,
+            25.5491667
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ntabozuko",
+        "coords": [
+            -32.8833333,
+            27.5794444
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Bhanti",
+        "coords": [
+            -31.7722222,
+            27.67
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Bitterfontein",
+        "coords": [
+            -31.0361111,
+            18.2661111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Bolotwa",
+        "coords": [
+            -31.9858333,
+            27.1888889
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Bosfontein",
+        "coords": [
+            -25.7419444,
+            31.6169444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Burgersfort",
+        "coords": [
+            -24.673611,
+            30.328333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Cala",
+        "coords": [
+            -31.522636,
+            27.696104
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Cannon Rocks",
+        "coords": [
+            -33.7486111,
+            26.5405556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Chrissiesmeer",
+        "coords": [
+            -26.2807417,
+            30.2132552
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Christmas Rock",
+        "coords": [
+            -33.1897222,
+            27.6361111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Clarkebury",
+        "coords": [
+            -31.7844444,
+            28.2888889
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Colchester",
+        "coords": [
+            -33.6908333,
+            25.8194444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Colenso",
+        "coords": [
+            -28.740278,
+            29.825
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Davel",
+        "coords": [
+            -26.444444,
+            29.666944
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Dimbaza",
+        "coords": [
+            -32.8352778,
+            27.2158333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Dladla",
+        "coords": [
+            -32.2627778,
+            28.3536111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Dullstroom",
+        "coords": [
+            -25.418349,
+            30.104624
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Dundonald",
+        "coords": [
+            -26.2430556,
+            30.8291667
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Eendekuil",
+        "coords": [
+            -32.687222,
+            18.883889
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Ngcobo",
+        "coords": [
+            -31.675,
+            27.9961111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Enon",
+        "coords": [
+            -33.3938889,
+            25.5463889
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ]
+        }
+    },
+    {
+        "name": "eZingxandoreni",
+        "coords": [
+            -32.4925,
+            28.0133333
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Fernie",
+        "coords": [
+            -26.3944444,
+            30.7944444
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ga-Moraba",
+        "coords": [
+            -24.4675,
+            30.6455556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Gcina",
+        "coords": [
+            -31.7580556,
+            27.6005556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Geluksburg",
+        "coords": [
+            -28.516389,
+            29.352222
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Gingindlovu",
+        "coords": [
+            -29.0280556,
+            31.5836111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Glenmore",
+        "coords": [
+            -26.2480556,
+            30.8652778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Golela",
+        "coords": [
+            -27.3186717,
+            31.8915069
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Gugwini",
+        "coords": [
+            -31.8691667,
+            27.7916667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Hectorspruit",
+        "coords": [
+            -25.4394444,
+            31.6827778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Hendrina",
+        "coords": [
+            -26.158333,
+            29.716111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Pullenshope",
+        "coords": [
+            -26.015,
+            29.5922222
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Hlobane",
+        "coords": [
+            -27.7161506,
+            30.9907909
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Hluhluwe",
+        "coords": [
+            -28.0175,
+            32.269167
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Hondeklipbaai",
+        "coords": [
+            -30.3163889,
+            17.2772222
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ]
+        }
+    },
+    {
+        "name": "Jeppe's Reef",
+        "coords": [
+            -25.7236111,
+            31.4727778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Jersey Vale",
+        "coords": [
+            -32.6530556,
+            27.4777778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Jojweni",
+        "coords": [
+            -31.8838889,
+            27.7986111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Jozini",
+        "coords": [
+            -27.4308303,
+            32.0663861
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Kaapmuiden",
+        "coords": [
+            -25.5345377,
+            31.3317786
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Kaapsehoop",
+        "coords": [
+            -25.59,
+            30.767218
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Kayser's Beach",
+        "coords": [
+            -33.2072222,
+            27.6102778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Kei Road",
+        "coords": [
+            -32.7058333,
+            27.5475
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Kidd's Beach",
+        "coords": [
+            -33.1482225,
+            27.7018952
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Kinkelbos",
+        "coords": [
+            -33.6425242,
+            25.8790809
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Klapmuts",
+        "coords": [
+            -33.8054178,
+            18.869676
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Kleinsee",
+        "coords": [
+            -29.6777778,
+            17.0708333
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ]
+        }
+    },
+    {
+        "name": "Kuboes",
+        "coords": [
+            -28.4470694,
+            16.9903196
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Koekenaap",
+        "coords": [
+            -31.523056,
+            18.292222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Komatipoort",
+        "coords": [
+            -25.4327778,
+            31.9558333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Komkhulu",
+        "coords": [
+            -32.3936111,
+            28.0544444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Komkulu",
+        "coords": [
+            -31.9649545,
+            27.8274789
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Koringberg",
+        "coords": [
+            -33.018869,
+            18.677522
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Kranskop",
+        "coords": [
+            -28.966944,
+            30.861667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Kriel",
+        "coords": [
+            -26.258889,
+            29.262778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "KuJingqi",
+        "coords": [
+            -32.2472222,
+            28.2805556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KuMabangula",
+        "coords": [
+            -31.7630556,
+            27.5658333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KuMilwa",
+        "coords": [
+            -32.2458333,
+            28.3236111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KuWohlo",
+        "coords": [
+            -31.91,
+            27.6019444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KwaBityi",
+        "coords": [
+            -31.7908333,
+            28.5183333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Malebitsa",
+        "coords": [
+            -24.8955556,
+            28.9263889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "KwaMaya",
+        "coords": [
+            -31.9019444,
+            27.5527778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KwaMxhalanga",
+        "coords": [
+            -32.7472222,
+            27.3536111
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KwaMzola",
+        "coords": [
+            -31.8247222,
+            27.7552778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KwaNongqongqwana",
+        "coords": [
+            -31.8061111,
+            27.6152778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Kwezibomvu",
+        "coords": [
+            -28.2622222,
+            31.2697222
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Lebalelo",
+        "coords": [
+            -24.6269444,
+            30.5533333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Leliefontein",
+        "coords": [
+            -30.3141667,
+            18.0825
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Lochiel",
+        "coords": [
+            -26.1438889,
+            30.7855556
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Lothair",
+        "coords": [
+            -26.391111,
+            30.433889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Louwsburg",
+        "coords": [
+            -27.577222,
+            31.290278
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mahlengele",
+        "coords": [
+            -31.8141667,
+            27.5905556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Makhosini",
+        "coords": [
+            -28.3832417,
+            31.2741035
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Malalane",
+        "coords": [
+            -25.494387,
+            31.509445
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mandlaneni",
+        "coords": [
+            -31.9011111,
+            27.6072222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mandlaneni",
+        "coords": [
+            -31.7966667,
+            28.5688889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Marawuleni",
+        "coords": [
+            -31.8036111,
+            28.5711111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Marble Hall",
+        "coords": [
+            -24.965833,
+            29.291111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mayireni",
+        "coords": [
+            -31.905,
+            27.5952778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mbendeni",
+        "coords": [
+            -32.3675,
+            28.0080556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mdantsane",
+        "coords": [
+            -32.4111111,
+            28.0180556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Melmoth",
+        "coords": [
+            -28.586667,
+            31.398056
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Memel",
+        "coords": [
+            -27.68,
+            29.565833
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Middelpos",
+        "coords": [
+            -31.9055965,
+            20.2311884
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Mkhonhotho",
+        "coords": [
+            -32.3025363,
+            28.2663031
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mkwezweni",
+        "coords": [
+            -31.8777778,
+            27.6111111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mooirivier",
+        "coords": [
+            -29.2077778,
+            29.9947222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Morgenzon",
+        "coords": [
+            -26.734722,
+            29.617222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mount Coke",
+        "coords": [
+            -32.9786021,
+            27.4271525
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mpakeni",
+        "coords": [
+            -25.4905978,
+            31.2438878
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mpini",
+        "coords": [
+            -32.4163889,
+            28.0127778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mqorwane",
+        "coords": [
+            -31.8838889,
+            27.8294444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ndenxe",
+        "coords": [
+            -31.8119444,
+            27.0055556
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mpuluzi",
+        "coords": [
+            -26.2938909,
+            30.7713251
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ngcobo",
+        "coords": [
+            -31.675,
+            27.99611
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ngodwana",
+        "coords": [
+            -25.569167,
+            30.680556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ngwemnyama",
+        "coords": [
+            -28.4892576,
+            31.9067905
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Nieuwoudtville",
+        "coords": [
+            -31.375688,
+            19.112587
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Nkaphane",
+        "coords": [
+            -28.2930556,
+            31.3069444
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Nomyaca",
+        "coords": [
+            -28.7388889,
+            31.6861111
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Nondweni",
+        "coords": [
+            -28.1861111,
+            30.8058333
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Nuwerus",
+        "coords": [
+            -31.1483333,
+            18.3586111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Nxelesa",
+        "coords": [
+            -31.8441667,
+            27.6638889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ohrigstad",
+        "coords": [
+            -24.7466667,
+            30.5641667
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Thomas River Historical Village",
+        "coords": [
+            -32.4588872,
+            27.2690247
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ouplaas",
+        "coords": [
+            -34.3738653,
+            20.4343888
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Paleisheuwel",
+        "coords": [
+            -32.4722222,
+            18.7202778
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Perdekop",
+        "coords": [
+            -27.1666667,
+            29.6247222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Pesikeni",
+        "coords": [
+            -31.8702778,
+            27.835
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Pofadder",
+        "coords": [
+            -29.128333,
+            19.395833
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Port Nolloth",
+        "coords": [
+            -29.248889,
+            16.870833
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Roma",
+        "coords": [
+            -27.7655556,
+            31.1563889
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Roossenekal",
+        "coords": [
+            -25.1919444,
+            29.925
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Rwantsana",
+        "coords": [
+            -32.4902778,
+            28.0258333
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Schoombee",
+        "coords": [
+            -31.450219,
+            25.4955302
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Schroeders",
+        "coords": [
+            -29.3848552,
+            30.5603809
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Seavale",
+        "coords": [
+            -33.1977778,
+            27.6291667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Sendelingsdrif",
+        "coords": [
+            -28.1247527,
+            16.8943489
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Seru",
+        "coords": [
+            -31.8772222,
+            27.8341667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Sheepmoor",
+        "coords": [
+            -26.7177778,
+            30.2991667
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Skoonplaas",
+        "coords": [
+            -25.7569444,
+            31.6361111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Skukuza Rest Camp",
+        "coords": [
+            -24.9936099,
+            31.5914391
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Saint Helena Bay",
+        "coords": [
+            -32.7583333,
+            18.0277778
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Standerton",
+        "coords": [
+            -26.9433333,
+            29.2436111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Steinkopf",
+        "coords": [
+            -29.2625,
+            17.7333333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Stoffberg",
+        "coords": [
+            -25.4211111,
+            29.8327778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Suiderstrand",
+        "coords": [
+            -34.815,
+            19.958056
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Swalluwnest",
+        "coords": [
+            -26.2313889,
+            30.8730556
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Swinburne",
+        "coords": [
+            -28.3483333,
+            29.2763889
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Tesselaarsdal",
+        "coords": [
+            -34.375,
+            19.5261111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Thembani",
+        "coords": [
+            -32.0076421,
+            27.3196382
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Thornhill",
+        "coords": [
+            -31.9805556,
+            26.5927778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Tinley Manor Beach",
+        "coords": [
+            -29.4486111,
+            31.2855556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Tylden",
+        "coords": [
+            -32.1152778,
+            27.07
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Uitkyk",
+        "coords": [
+            -31.5527778,
+            18.3397222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "uMzantsi",
+        "coords": [
+            -32.845,
+            27.2877778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Van Der Merwes Kraal",
+        "coords": [
+            -24.6647222,
+            29.4411111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Van Dyksdrif",
+        "coords": [
+            -26.0961111,
+            29.325
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Van Reenen",
+        "coords": [
+            -28.375278,
+            29.380556
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Wakkerstroom",
+        "coords": [
+            -27.353611,
+            30.145
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Warden",
+        "coords": [
+            -27.855,
+            28.9647222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Wesley",
+        "coords": [
+            -33.3194444,
+            27.3408333
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Winterton",
+        "coords": [
+            -28.8125,
+            29.5408333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Wolvengat",
+        "coords": [
+            -34.6697222,
+            19.6977778
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Wupperthal",
+        "coords": [
+            -32.276708,
+            19.215107
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Zingqandana",
+        "coords": [
+            -32.4516667,
+            28.0122222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Alicedale",
+        "coords": [
+            -33.3155556,
+            26.0841667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Alverton",
+        "coords": [
+            -24.5725,
+            30.3758333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Apara",
+        "coords": [
+            -24.5947222,
+            30.7630556
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Aurora",
+        "coords": [
+            -32.704444,
+            18.485
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Bholani",
+        "coords": [
+            -32.2005556,
+            27.9372222
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ]
+        }
+    },
+    {
+        "name": "Boesmansriviermond",
+        "coords": [
+            -33.6852778,
+            26.6552778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Boiketlo",
+        "coords": [
+            -24.7269444,
+            30.9980556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Boknes",
+        "coords": [
+            -33.7264077,
+            26.5811406
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Bonnievale",
+        "coords": [
+            -33.932218,
+            20.09973
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Boromatshini",
+        "coords": [
+            -24.6305556,
+            30.7972222
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Boshoek",
+        "coords": [
+            -27.8098577,
+            31.1036506
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Botha",
+        "coords": [
+            -33.5638889,
+            19.2583333
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Bothashoek",
+        "coords": [
+            -24.6111111,
+            30.2905556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Brandvlei",
+        "coords": [
+            -30.463333,
+            20.486111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Cillie",
+        "coords": [
+            -28.7355556,
+            20.5841667
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Copperton",
+        "coords": [
+            -29.922247,
+            22.3035349
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "De Doorns",
+        "coords": [
+            -33.479444,
+            19.670833
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "De Hoek",
+        "coords": [
+            -32.9408333,
+            18.7591667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Didimala",
+        "coords": [
+            -24.6269444,
+            30.7561111
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Dipping",
+        "coords": [
+            -24.6580556,
+            30.8027778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Dwarskersbos",
+        "coords": [
+            -32.695833,
+            18.227778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "eGobhoza",
+        "coords": [
+            -25.425,
+            31.1833333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "eKuphumleni",
+        "coords": [
+            -32.5522222,
+            26.6555556
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Elandsbaai",
+        "coords": [
+            -32.3108333,
+            18.345
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "eMdlankhomo",
+        "coords": [
+            -25.275,
+            31.2333333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "eXwili",
+        "coords": [
+            -31.7366667,
+            28.5397222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Frankfurt",
+        "coords": [
+            -24.6277761,
+            30.7986057
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Ga-Mamatlhola",
+        "coords": [
+            -24.2558333,
+            30.4625
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Ga-Monlala",
+        "coords": [
+            -24.6055556,
+            30.7708333
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Ga-Motodi",
+        "coords": [
+            -24.5552778,
+            30.3408333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Genadendal",
+        "coords": [
+            -34.033443,
+            19.55837
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Gompo Park",
+        "coords": [
+            -32.7530556,
+            27.7241667
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Goudini",
+        "coords": [
+            -33.6666667,
+            19.2583333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Graafwater",
+        "coords": [
+            -32.152566,
+            18.604817
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Riverlands",
+        "coords": [
+            -33.5269444,
+            18.5994444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Greyton",
+        "coords": [
+            -34.050751,
+            19.608166
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Groendal",
+        "coords": [
+            -33.8933919,
+            19.1005153
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Groot-Drakenstein",
+        "coords": [
+            -33.8661111,
+            18.985
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Grootdrink",
+        "coords": [
+            -28.563611,
+            21.748611
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Gwaba",
+        "coords": [
+            -32.9088889,
+            27.2783333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Hawston",
+        "coords": [
+            -34.388611,
+            19.131667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Hermon",
+        "coords": [
+            -33.4369444,
+            18.9680556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Hlabisa",
+        "coords": [
+            -28.145833,
+            31.875278
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Hoedspruit",
+        "coords": [
+            -24.352964,
+            30.951343
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Indwe",
+        "coords": [
+            -31.467778,
+            27.338611
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Jacobsbaai",
+        "coords": [
+            -32.966667,
+            17.890278
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Kakamas",
+        "coords": [
+            -28.773056,
+            20.615
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Kalbaskraal",
+        "coords": [
+            -33.5725,
+            18.648333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Kanana",
+        "coords": [
+            -24.6636111,
+            30.8102778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Kanyamazane",
+        "coords": [
+            -25.4720487,
+            31.1784475
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Kenhardt",
+        "coords": [
+            -29.349254,
+            21.155953
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Kenton-on-Sea",
+        "coords": [
+            -33.6828572,
+            26.6717068
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Khutsong",
+        "coords": [
+            -24.6166667,
+            30.7613889
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Klawer",
+        "coords": [
+            -31.775,
+            18.625556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Komga",
+        "coords": [
+            -32.5777778,
+            27.8888889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "KwaDuma",
+        "coords": [
+            -28.0683333,
+            31.7586111
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "KwaMayakazi",
+        "coords": [
+            -28.0663889,
+            31.9547222
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "KwaQunwane",
+        "coords": [
+            -28.0488889,
+            31.8372222
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Lambert's Bay",
+        "coords": [
+            -32.093411,
+            18.307266
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Lebanon",
+        "coords": [
+            -34.1831676,
+            19.1274537
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Leroro",
+        "coords": [
+            -24.6202778,
+            30.7977778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Lesseyton",
+        "coords": [
+            -31.846667,
+            26.7775
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Loeriesfontein",
+        "coords": [
+            -30.955278,
+            19.443611
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Louisvale",
+        "coords": [
+            -28.5731016,
+            21.1972682
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Lutzburg",
+        "coords": [
+            -28.7438889,
+            20.6311111
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Mabhokisini",
+        "coords": [
+            -28.1852778,
+            31.8816667
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Mabotsha",
+        "coords": [
+            -24.5355556,
+            30.2883333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Madeira",
+        "coords": [
+            -24.2627778,
+            30.4288889
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Mahubahuba",
+        "coords": [
+            -24.5805556,
+            30.3191667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mahudua",
+        "coords": [
+            -24.6061111,
+            30.7758333
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Makgaung",
+        "coords": [
+            -24.29,
+            30.46
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Moremela Village",
+        "coords": [
+            -24.6616667,
+            30.7986111
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Mapalagela",
+        "coords": [
+            -24.625,
+            30.7972222
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Marchand",
+        "coords": [
+            -28.7311111,
+            20.5036111
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Marshstrand",
+        "coords": [
+            -32.7566667,
+            28.2672222
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mashelebeng",
+        "coords": [
+            -24.6347222,
+            30.7519444
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Matjiesfontein",
+        "coords": [
+            -33.231944,
+            20.580278
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Matsulu",
+        "coords": [
+            -25.5,
+            31.33369
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mavulazi",
+        "coords": [
+            -28.0080556,
+            31.8383333
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mdladla",
+        "coords": [
+            -25.5916667,
+            31.6805556
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Molshoop",
+        "coords": [
+            -34.7816667,
+            20.0347222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Molteno",
+        "coords": [
+            -31.396667,
+            26.362778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Morolaneng",
+        "coords": [
+            -24.7436111,
+            30.9933333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Morolaneng",
+        "coords": [
+            -24.7533333,
+            30.9683333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Motlamogale",
+        "coords": [
+            -24.7033333,
+            30.9794444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mpumalanga",
+        "coords": [
+            -29.813333,
+            30.630278
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mpungamhlophe",
+        "coords": [
+            -28.2669444,
+            31.2541667
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Ngolotshe",
+        "coords": [
+            -28.1913889,
+            31.7866667
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Ngwetsintshage",
+        "coords": [
+            -24.6752778,
+            30.7988889
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Addo",
+        "coords": [
+            -33.5220919,
+            25.7124845
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ngqamakhwe",
+        "coords": [
+            -32.199813,
+            27.9391487
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ]
+        }
+    },
+    {
+        "name": "Nuwehoop",
+        "coords": [
+            -32.16,
+            18.6061111
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Onrusrivier",
+        "coords": [
+            -34.412222,
+            19.17
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Op die Berg",
+        "coords": [
+            -33.0197222,
+            19.3108333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Oudekraalfontein",
+        "coords": [
+            -33.0686111,
+            18.3394444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Paternoster",
+        "coords": [
+            -32.809038,
+            17.891695
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Paterson",
+        "coords": [
+            -33.4397222,
+            25.9727778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Pearston",
+        "coords": [
+            -32.581667,
+            25.137778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Penge",
+        "coords": [
+            -24.3855556,
+            30.2852778
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Philadelphia",
+        "coords": [
+            -33.666635,
+            18.580989
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Piketberg",
+        "coords": [
+            -32.904167,
+            18.7575
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Pilgrim's Rest",
+        "coords": [
+            -24.904369,
+            30.753617
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Port Beaufort",
+        "coords": [
+            -34.395826,
+            20.829607
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Pringle Bay",
+        "coords": [
+            -34.349859,
+            18.833741
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ]
+        }
+    },
+    {
+        "name": "Qumra",
+        "coords": [
+            -32.5894444,
+            27.8872222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Rawsonville",
+        "coords": [
+            -33.684708,
+            19.315175
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Redelinghuys",
+        "coords": [
+            -32.478889,
+            18.538056
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Riebeek-Kasteel",
+        "coords": [
+            -33.385047,
+            18.895509
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Riebeek-Wes",
+        "coords": [
+            -33.3510084,
+            18.8700259
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Rooiels",
+        "coords": [
+            -34.3012842,
+            18.8166684
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Rosmead",
+        "coords": [
+            -31.489167,
+            25.119444
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Simondium",
+        "coords": [
+            -33.838055,
+            18.961111
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Slangrivier",
+        "coords": [
+            -34.137222,
+            20.861667
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Sterkstroom",
+        "coords": [
+            -31.557222,
+            26.553333
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Tshabelang",
+        "coords": [
+            -24.6152778,
+            30.7944444
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Tshirelang",
+        "coords": [
+            -24.6627778,
+            30.7922222
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Tswafeng",
+        "coords": [
+            -24.7711111,
+            30.9763889
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Van Wyksvlei",
+        "coords": [
+            -30.3513889,
+            21.8241667
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Vanrhynsdorp",
+        "coords": [
+            -31.6088889,
+            18.7416667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Vermont",
+        "coords": [
+            -34.4183333,
+            19.1527778
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Williston",
+        "coords": [
+            -31.33903,
+            20.916172
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Witsand",
+        "coords": [
+            -34.394444,
+            20.846111
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Wolseley",
+        "coords": [
+            -33.4130556,
+            19.2016667
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Zidenge",
+        "coords": [
+            -32.6741667,
+            27.3213889
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Zidonini",
+        "coords": [
+            -28.1344444,
+            31.9747222
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Zindenge",
+        "coords": [
+            -32.6697222,
+            27.2872222
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mqanduli",
+        "coords": [
+            -31.8189836,
+            28.7635057
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Vioolsdrif",
+        "coords": [
+            -28.770794,
+            17.625584
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Wavecrest",
+        "coords": [
+            -32.5853704,
+            28.5230404
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Amabele",
+        "coords": [
+            -32.6623944,
+            27.5245101
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Lower Sabie Rest Camp",
+        "coords": [
+            -25.1201921,
+            31.9167498
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Churchhaven",
+        "coords": [
+            -33.1773857,
+            18.0659491
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Stofbergsfontein",
+        "coords": [
+            -33.1685474,
+            18.0580804
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Elandsheim",
+        "coords": [
+            -28.4814044,
+            30.531633
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Hogsback",
+        "coords": [
+            -32.5951529,
+            26.9380055
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "eSitheza",
+        "coords": [
+            -28.5201667,
+            32.1457566
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Rosetta",
+        "coords": [
+            -29.306351,
+            29.975186
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mogalatsana",
+        "coords": [
+            -24.7311914,
+            29.4326853
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ga-Masemola",
+        "coords": [
+            -24.5687556,
+            29.6518665
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Nqileni",
+        "coords": [
+            -32.1356873,
+            29.0003288
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Infanta",
+        "coords": [
+            -34.4218803,
+            20.8543364
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Twee Rivieren Rest Camp",
+        "coords": [
+            -26.4722697,
+            20.6119154
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Pella",
+        "coords": [
+            -29.031701,
+            19.153028
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Imbangi",
+        "coords": [
+            -28.5190956,
+            30.1902242
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Ezibomvu",
+        "coords": [
+            -28.0960768,
+            30.791156
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Cape Vidal",
+        "coords": [
+            -28.1273367,
+            32.5570283
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Lister's Point",
+        "coords": [
+            -27.9691746,
+            32.383776
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Seville",
+        "coords": [
+            -24.6731842,
+            31.4218845
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Spitspunt",
+        "coords": [
+            -24.9561283,
+            28.9203402
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Bloedfontein",
+        "coords": [
+            -25.0300443,
+            28.9435501
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Doornlaagte",
+        "coords": [
+            -24.9783439,
+            28.97414
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "De Rust Village",
+        "coords": [
+            -34.176797,
+            19.1025393
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Elim",
+        "coords": [
+            -34.5922238,
+            19.7594346
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Olifants Rest Camp",
+        "coords": [
+            -24.0050597,
+            31.7394969
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Hilltop Camp",
+        "coords": [
+            -28.0840411,
+            32.0447655
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Satara Rest Camp",
+        "coords": [
+            -24.3936987,
+            31.7775588
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Lebombo Lodge",
+        "coords": [
+            -24.4509985,
+            31.9776846
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Sweni Lodge",
+        "coords": [
+            -24.4545387,
+            31.9798089
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Roodewal Bush Lodge",
+        "coords": [
+            -24.1456036,
+            31.6321512
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Balule Satellite Camp",
+        "coords": [
+            -24.0535234,
+            31.7332651
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Letaba Rest Camp",
+        "coords": [
+            -23.8543796,
+            31.5766711
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Berg-en-Dal Rest Camp",
+        "coords": [
+            -25.4262644,
+            31.447461
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Pretoriuskop Rest Camp",
+        "coords": [
+            -25.1712524,
+            31.2684527
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ]
+        }
+    },
+    {
+        "name": "Lukimbi Safari Lodge",
+        "coords": [
+            -25.3651458,
+            31.6837697
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Malelane Satellite Camp",
+        "coords": [
+            -25.4768638,
+            31.5116384
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Crocodile Bridge Rest Camp",
+        "coords": [
+            -25.3583262,
+            31.8939101
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Shishangeni Private Lodge",
+        "coords": [
+            -25.3888821,
+            31.9755425
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Hamilton's Tented Camp",
+        "coords": [
+            -24.6239771,
+            31.6727816
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Imbali Safari Lodge",
+        "coords": [
+            -24.5958434,
+            31.6281658
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Talamati Bushveld Camp",
+        "coords": [
+            -24.5559839,
+            31.5571677
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Maroela Campsite",
+        "coords": [
+            -24.4559637,
+            31.3993197
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Munywaneni Bush Lodge",
+        "coords": [
+            -28.1513913,
+            32.0353991
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Muntulu Bush Lodge",
+        "coords": [
+            -28.1273836,
+            32.0520086
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Sodwana Bay",
+        "coords": [
+            -27.548832,
+            32.6711841
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Lake Bhangazi Bush Camp",
+        "coords": [
+            -28.1160638,
+            32.5347276
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mhlangeni Bush Lodge",
+        "coords": [
+            -27.523186,
+            31.3730922
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Ithala Offices",
+        "coords": [
+            -27.5410371,
+            31.3723128
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Ntshondwe Camp",
+        "coords": [
+            -27.5441701,
+            31.2816459
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Thalu Field Office",
+        "coords": [
+            -27.5072091,
+            31.2038833
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Charters Creek",
+        "coords": [
+            -28.2039771,
+            32.4169607
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Coghlan",
+        "coords": [
+            -31.6542141,
+            28.232869
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Matyholweni Camp",
+        "coords": [
+            -33.6726564,
+            25.8029545
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Grootkolk Wilderness Camp",
+        "coords": [
+            -24.890963,
+            20.1450082
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Tinga Legends Lodge",
+        "coords": [
+            -24.9716915,
+            31.5833897
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Tinga Narina Lodge",
+        "coords": [
+            -24.9636022,
+            31.5625404
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "eZibondeni",
+        "coords": [
+            -32.3055445,
+            28.000783
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "eKomanishini",
+        "coords": [
+            -32.2805113,
+            28.0135482
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Ngqakeni",
+        "coords": [
+            -32.2990878,
+            27.9700127
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "eGqubeni",
+        "coords": [
+            -32.308449,
+            27.9494927
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "eRhamnyiba",
+        "coords": [
+            -32.7997211,
+            27.3400332
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Tyhusha",
+        "coords": [
+            -32.7724816,
+            27.3236824
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Eshane",
+        "coords": [
+            -29.1017348,
+            30.823195
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Matimatolo",
+        "coords": [
+            -29.1301862,
+            30.7956408
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Biyamiti Bushveld Camp",
+        "coords": [
+            -25.3074239,
+            31.7108815
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Mahunu",
+        "coords": [
+            -28.9158887,
+            31.859523
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Sikhalasenkosi",
+        "coords": [
+            -28.896229,
+            31.8921841
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Potberg",
+        "coords": [
+            -34.3746476,
+            20.5323202
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Mantuma Camp",
+        "coords": [
+            -27.5968422,
+            32.2198857
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Lekkersing",
+        "coords": [
+            -29.001338,
+            17.096837
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Calderwood",
+        "coords": [
+            -32.8569347,
+            26.7282734
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Fanie's Island Camp",
+        "coords": [
+            -28.111572,
+            32.4310666
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Vrede",
+        "coords": [
+            -33.4632334,
+            20.5882355
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Algeria",
+        "coords": [
+            -32.3735783,
+            19.0573315
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Kliphuis",
+        "coords": [
+            -32.134665,
+            19.0056819
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Qunu",
+        "coords": [
+            -31.795771,
+            28.614906
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mvezo",
+        "coords": [
+            -31.961261,
+            28.49144
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Cathedral Peak Hotel",
+        "coords": [
+            -28.9479267,
+            29.2048043
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Concordia",
+        "coords": [
+            -29.5385362,
+            17.9462783
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Champagne Castle",
+        "coords": [
+            -29.0473872,
+            29.4177694
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "De Hoop Village",
+        "coords": [
+            -34.4543775,
+            20.402159
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Oena Mine",
+        "coords": [
+            -28.0663961,
+            17.0191109
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Augrabies Falls Rest Camp",
+        "coords": [
+            -28.592686,
+            20.33679
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Rocktail Beach Camp",
+        "coords": [
+            -27.2622458,
+            32.7699569
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Rocktail Bay",
+        "coords": [
+            -27.1797574,
+            32.8016719
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mabibi",
+        "coords": [
+            -27.3293759,
+            32.7303946
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Raaswater",
+        "coords": [
+            -28.5911947,
+            21.1889793
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Kalksloot",
+        "coords": [
+            -28.5517946,
+            21.1519698
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Marloth Park",
+        "coords": [
+            -25.343681,
+            31.783462
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Baardskeerdersbos",
+        "coords": [
+            -34.588444,
+            19.570208
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": null,
+        "coords": [
+            -24.5012599,
+            31.1685917
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": null,
+        "coords": [
+            -24.4536581,
+            31.1969981
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Saalskop",
+        "coords": [
+            -28.7524975,
+            21.8413021
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Allemorgens",
+        "coords": [
+            -33.5161013,
+            20.4069225
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Steelpoort",
+        "coords": [
+            -24.7315723,
+            30.2056494
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Kamberg",
+        "coords": [
+            -29.3848141,
+            29.6675409
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Highmoor",
+        "coords": [
+            -29.3202806,
+            29.6224996
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Rietpoort",
+        "coords": [
+            -30.956826,
+            18.041866
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Goodhouse",
+        "coords": [
+            -28.912105,
+            18.2116
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Majuba Outpost",
+        "coords": [
+            -27.550859,
+            31.8383971
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Masango Homestead",
+        "coords": [
+            -27.5518612,
+            31.8138131
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Bonjaneni",
+        "coords": [
+            -28.6889169,
+            28.9725651
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Nyusana",
+        "coords": [
+            -28.6897636,
+            28.9884205
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Ntuthunga",
+        "coords": [
+            -28.4285475,
+            31.927717
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Piet Tlou",
+        "coords": [
+            -25.6164423,
+            29.4337408
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Andriesvale",
+        "coords": [
+            -26.9373186,
+            20.6570308
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Draaikraal",
+        "coords": [
+            -25.2124165,
+            30.0236537
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Bulletrap",
+        "coords": [
+            -29.4640197,
+            17.7668242
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Kheis",
+        "coords": [
+            -30.4620483,
+            17.9929881
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Buffelsrivier",
+        "coords": [
+            -29.702178,
+            17.603215
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Sanddrift",
+        "coords": [
+            -28.4103899,
+            16.7764883
+        ],
+        "recommended_facility": {
+            "school": [
+                -29.082722,
+                19.460538
+            ],
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Sultanaoord",
+        "coords": [
+            -28.421725,
+            21.4513599
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Karos",
+        "coords": [
+            -28.4224841,
+            21.6123707
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Lambrechtsdrif",
+        "coords": [
+            -28.4909212,
+            21.6863818
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Kroonkop",
+        "coords": [
+            -24.8808155,
+            30.5330083
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Zamani",
+        "coords": [
+            -27.6688874,
+            29.5558595
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Mavuya",
+        "coords": [
+            -31.4740416,
+            27.3529851
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mangobomvo",
+        "coords": [
+            -32.2095244,
+            27.9251489
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ]
+        }
+    },
+    {
+        "name": "Kampersrus AH",
+        "coords": [
+            -24.5110025,
+            30.8912864
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ezakheni",
+        "coords": [
+            -28.6323551,
+            29.8876994
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Umbumbulu",
+        "coords": [
+            -29.987719,
+            30.703546
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Daggakraal",
+        "coords": [
+            -27.132587,
+            29.975758
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Bethany",
+        "coords": [
+            -28.6789337,
+            29.333567
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Woodford",
+        "coords": [
+            -28.6906502,
+            29.2965039
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Eenzaam",
+        "coords": [
+            -24.9654803,
+            29.8770065
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Verena",
+        "coords": [
+            -25.4807404,
+            29.0168219
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Tamboti Tented Camp",
+        "coords": [
+            -24.4546992,
+            31.4054489
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": "Ebenhaeser",
+        "coords": [
+            -31.5858191,
+            18.2427736
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Wegdraai",
+        "coords": [
+            -28.8368766,
+            21.866677
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Gariep",
+        "coords": [
+            -28.6135732,
+            21.7802
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Tharfield",
+        "coords": [
+            -33.3568966,
+            27.2367596
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Marion Base",
+        "coords": [
+            -46.8765311,
+            37.8581122
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Malan",
+        "coords": [
+            -33.576024,
+            19.007885
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Cederberg",
+        "coords": [
+            -32.5005556,
+            19.2569444
+        ],
+        "recommended_facility": {
+            "school": [
+                -33.477594,
+                19.186765
+            ],
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "KwaKayaletu",
+        "coords": [
+            -32.6366667,
+            26.9286111
+        ],
+        "recommended_facility": {
+            "school": [
+                -32.560852,
+                27.499745
+            ],
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Bosdorp",
+        "coords": [
+            -32.3544885,
+            19.0398803
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Hambrook",
+        "coords": [
+            -28.6369136,
+            29.4396472
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Acton Homes",
+        "coords": [
+            -28.6431377,
+            29.4053619
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Greenpoint",
+        "coords": [
+            -28.5567493,
+            29.4032013
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Rooihoek",
+        "coords": [
+            -28.5779244,
+            29.3759447
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Melmoth",
+        "coords": [
+            -28.5866281,
+            31.3980551
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ]
+        }
+    },
+    {
+        "name": "Marydale",
+        "coords": [
+            -29.4056469,
+            22.105054
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -29.072722,
+                19.450538
+            ]
+        }
+    },
+    {
+        "name": "Kodidi",
+        "coords": [
+            -32.4325825,
+            28.3960587
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Mathikiti Camp",
+        "coords": [
+            -24.4361918,
+            31.7293055
+        ],
+        "recommended_facility": {
+            "school": [
+                -25.132576,
+                30.724518
+            ],
+            "clinic": [
+                -25.122576,
+                30.714518
+            ]
+        }
+    },
+    {
+        "name": null,
+        "coords": [
+            -28.1195303,
+            30.8014798
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": null,
+        "coords": [
+            -28.1076258,
+            30.826199
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": null,
+        "coords": [
+            -28.1237032,
+            30.7950961
+        ],
+        "recommended_facility": {
+            "school": [
+                -28.274263,
+                30.886164
+            ],
+            "clinic": [
+                -28.264263,
+                30.876164
+            ]
+        }
+    },
+    {
+        "name": "Struisbaai",
+        "coords": [
+            -34.8041134,
+            20.0541365
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Struis Bay",
+        "coords": [
+            -34.8111916,
+            20.036906
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "L'Agulhas",
+        "coords": [
+            -34.8239853,
+            20.0149387
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -33.467594,
+                19.176765
+            ]
+        }
+    },
+    {
+        "name": "Khula Dharma",
+        "coords": [
+            -32.6969849,
+            28.1952692
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    },
+    {
+        "name": "Luxeni",
+        "coords": [
+            -32.4373343,
+            28.2572291
+        ],
+        "recommended_facility": {
+            "clinic": [
+                -32.550852,
+                27.489745
+            ]
+        }
+    }
+]

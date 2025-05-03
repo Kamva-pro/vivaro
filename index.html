@@ -40,21 +40,22 @@
 
     <!-- Stats Panel -->
     <div id="stats">
-        <!-- 🔍 Search Bar (Remains Visible) -->
-        <h2>Search for a City</h2>
-        <input type="text" id="searchBox" placeholder="Enter city name..." />
-        <button onclick="searchCity()">Search</button>
-    
-        <!-- 📊 City Search Results (Updates Dynamically) -->
-        <div id="searchResults">
-            <h2>Underserved Community Stats</h2>
-            <p><strong>Total Cities:</strong> <span id="totalCities">Loading...</span></p>
-            <p><strong>Underserved Cities:</strong> <span id="underservedCount">Loading...</span></p>
-            <p><strong>Underserved in Schools:</strong> <span id="schoolUnderserved">Loading...</span></p>
-            <p><strong>Underserved in Healthcare:</strong> <span id="healthcareUnderserved">Loading...</span></p>
-            <canvas id="statsChart"></canvas>
+        <div id="searchBar">
+          <input type="text" id="searchBox" placeholder="Enter a city name" />
+          <button onclick="searchCity()">Search City</button>
+          <button onclick="resetMap()">Reset Map</button>
         </div>
-    </div>
+        <div id="details">
+          <!-- This container will be updated dynamically -->
+          <h2>Underserved Community Stats</h2>
+          <p><strong>Total Cities:</strong> <span id="totalCities">Loading...</span></p>
+          <p><strong>Underserved Cities:</strong> <span id="underservedCount">Loading...</span></p>
+          <p><strong>Schools Underserved:</strong> <span id="schoolUnderserved">Loading...</span></p>
+          <p><strong>Healthcare Underserved:</strong> <span id="healthcareUnderserved">Loading...</span></p>
+          <canvas id="statsChart"></canvas>
+        </div>
+      </div>
+      
     
     
 
