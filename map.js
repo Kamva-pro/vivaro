@@ -1,10 +1,20 @@
 // Initialize Leaflet map centered on South Africa
-var map = L.map('map').setView([-30.5595, 22.9375], 6); // Adjust zoom level
+var map = L.map('map').setView([-30.5595, 22.9375], 5); 
 
 // Add OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
+
+
+// Create a custom red icon
+var largeRedIcon = L.icon({
+    iconUrl: "assets/landmark-icon.png", 
+    iconSize: [30, 30], // 🔍 Make it bigger (adjust as needed)
+    iconAnchor: [15, 30], // Ensures correct positioning
+    popupAnchor: [1, -34]
+});
+
 
 // Function to fetch underserved community data from FastAPI
 function fetchUnderservedData() {
@@ -17,7 +27,7 @@ function fetchUnderservedData() {
             if (community.coords) {  // Ensure coordinates exist
                 console.log(`Adding marker for ${community.name} at`, community.coords); // ✅ Debugging
             
-                L.marker([community.coords[0], community.coords[1]])  // Ensure correct Lat, Long order
+                L.marker([community.coords[0], community.coords[1]], { icon: largeRedIcon })  // Ensure correct Lat, Long order
                     .addTo(map)
                     .bindPopup(`<b>${community.name}</b><br>
                                 🏫 School Distance: ${community.school_dist} km<br>
