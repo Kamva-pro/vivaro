@@ -2,8 +2,6 @@ import React from "react";
 
 const Stats = ({ statsData, selectedCommunity }) => {
   if (selectedCommunity) {
-    // Dynamically compute underserved status:
-    // Mark as underserved if the API flag is set or if either distance exceeds 10 km.
     const isUnderserved =
       selectedCommunity.underserved ||
       selectedCommunity.school_dist > 10 ||
@@ -13,10 +11,10 @@ const Stats = ({ statsData, selectedCommunity }) => {
       <div id="community-details">
         <h2>{selectedCommunity.name} - Detailed Analysis</h2>
         <p>
-          <strong>School Distance:</strong> {selectedCommunity.school_dist} km
+          <strong>Nearest School:</strong> {selectedCommunity.school_dist} km
         </p>
         <p>
-          <strong>Healthcare Distance:</strong> {selectedCommunity.healthcare_dist} km
+          <strong>Nearest Healthcare Facility:</strong> {selectedCommunity.healthcare_dist} km
         </p>
         <p>
           <strong>Underserved Status:</strong>{" "}
@@ -51,19 +49,19 @@ const Stats = ({ statsData, selectedCommunity }) => {
     <div id="stats">
       <h2>Underserved Community Stats</h2>
       <p>
-        <strong>Total Cities:</strong>{" "}
+        <strong>Total Communities Found:</strong>{" "}
         <span id="totalCities">{statsData.totalCities}</span>
       </p>
       <p>
-        <strong>Underserved Cities:</strong>{" "}
+        <strong>Underserved Communities:</strong>{" "}
         <span id="underservedCount">{statsData.underservedCount}</span>
       </p>
       <p>
-        <strong>Schools Underserved:</strong>{" "}
+        <strong>Lack of Schools:</strong>{" "}
         <span id="schoolUnderserved">{statsData.schoolUnderserved}</span>
       </p>
       <p>
-        <strong>Healthcare Underserved:</strong>{" "}
+        <strong>Lack of Healthcare Facilities:</strong>{" "}
         <span id="healthcareUnderserved">{statsData.healthcareUnderserved}</span>
       </p>
     </div>
