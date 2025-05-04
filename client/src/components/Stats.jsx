@@ -24,14 +24,23 @@ const Stats = ({ statsData, selectedCommunity }) => {
         </p>
         {isUnderserved && selectedCommunity.recommendations && (
           <>
-            <p>
-              <strong>New School Recommendation:</strong>{" "}
-              {selectedCommunity.recommendations.newSchool}
-            </p>
-            <p>
-              <strong>New Clinic Recommendation:</strong>{" "}
-              {selectedCommunity.recommendations.newClinic}
-            </p>
+            {selectedCommunity.recommendations.newSchool ? (
+              <p>
+                <strong>New School Recommendation:</strong>{" "}
+                {selectedCommunity.recommendations.newSchool}
+              </p>
+            ) : null}
+            {selectedCommunity.recommendations.newClinic ? (
+              <p>
+                <strong>New Clinic Recommendation:</strong>{" "}
+                {selectedCommunity.recommendations.newClinic}
+              </p>
+            ) : null}
+            {selectedCommunity.recommendations.justification && (
+              <p>
+                <em>{selectedCommunity.recommendations.justification}</em>
+              </p>
+            )}
           </>
         )}
       </div>
