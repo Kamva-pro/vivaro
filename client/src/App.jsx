@@ -5,7 +5,7 @@ import Search from "./components/Search";
 import { fetchUnderservedData } from "./fetchdata";
 
 const App = () => {
-  const [mapCenter, setMapCenter] = useState([-30.5595, 22.9375]); 
+  const [mapCenter, setMapCenter] = useState([-30.5595, 22.9375]); // South Africa center
   const [zoomLevel, setZoomLevel] = useState(6);
   const [selectedCommunity, setSelectedCommunity] = useState(null);
   const [data, setData] = useState(null);
@@ -17,19 +17,26 @@ const App = () => {
   }, []);
 
   const underservedData = (data && data.underserved) || [];
-
   const statsData = data
     ? {
         totalCities: data.total_cities || 0,
         underservedCount: underservedData.length,
-        schoolUnderserved: underservedData.filter((c) => c.school_dist > 10).length || 0,
-        healthcareUnderserved: underservedData.filter((c) => c.healthcare_dist > 10).length || 0,
+        schoolUnderserved:
+          underservedData.filter((c) => c.school_dist > 10).length || 0,
+        healthcareUnderserved:
+          underservedData.filter((c) => c.healthcare_dist > 10).length || 0,
       }
     : {};
 
   return (
-    <div className="app" style={{ position: "relative", height: "100vh", width: "100vw" }}>
-      
+    <div
+      className="app"
+      style={{
+        position: "relative",
+        height: "100vh",
+        width: "100vw",
+      }}
+    >
       <div className="search-container">
         <Search
           onSearchResult={(newCenter, communityDetails, newZoom) => {
@@ -45,19 +52,23 @@ const App = () => {
         />
       </div>
 
-      <Map
-        mapCenter={mapCenter}
-        zoomLevel={zoomLevel}
-        underservedData={underservedData}
-        onCommunitySelect={setSelectedCommunity}
-      />
+      <div className="map-container">
+        <Map
+          mapCenter={mapCenter}
+          zoomLevel={zoomLevel}
+          underservedData={underservedData}
+          onCommunitySelect={setSelectedCommunity}
+        />
+        {!data && (
+          <div className="loading-banner">
+            <div className="spinner"></div>
+            <div className="loading-text">Analyzing Data...</div>
+          </div>
+        )}
+      </div>
 
       <div className="stats-overlay">
-        {data ? (
-          <Stats statsData={statsData} selectedCommunity={selectedCommunity} />
-        ) : (
-          <div>Loading stats...</div>
-        )}
+        <Stats statsData={statsData} selectedCommunity={selectedCommunity} />
       </div>
     </div>
   );
