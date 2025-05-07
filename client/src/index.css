@@ -6,12 +6,40 @@ body,
   padding: 0;
 }
 
+/* Overall layout: two columns using flex */
 .app {
-  position: relative;
+  display: flex;
   height: 100vh;
   width: 100vw;
 }
 
+/* Left column occupies 50% of the viewport */
+.left-column {
+  position: relative;
+  width: 50%;
+}
+
+/* Right column occupies the other 50% */
+.right-column {
+  width: 50%;
+  background-color: #f5f5f5; /* Optional background for differentiation */
+  overflow-y: auto;
+}
+
+/* Map container takes full size of left column */
+.map-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Ensure the Leaflet container fills its parent */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Search container positioned over the map (top-left) */
 .search-container {
   position: absolute;
   top: 20px;
@@ -23,31 +51,7 @@ body,
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.map-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.leaflet-container {
-  height: 100%;
-  width: 100%;
-}
-
-.stats-overlay {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 300px;
-  max-height: 80vh;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1100;
-  overflow-y: auto;
-}
-
+/* Loading banner styled to appear at the bottom center of the map container */
 .loading-banner {
   position: absolute;
   bottom: 20px;
@@ -59,9 +63,10 @@ body,
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  z-index: 1200; 
+  z-index: 1200;
 }
 
+/* Spinner styling */
 .spinner {
   width: 30px;
   height: 30px;
@@ -77,7 +82,31 @@ body,
   }
 }
 
+/* Loading text style */
 .loading-text {
   font-size: 1rem;
   color: #333;
+}
+
+/* Stats overlay on top of the map */
+.stats-overlay {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 300px;
+  max-height: 60%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1300;
+  overflow-y: auto;
+}
+
+/* Button to toggle stats overlay, positioned at bottom-right in map container */
+.stats-toggle-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1250;
 }
