@@ -10,7 +10,6 @@ const App = () => {
   const [zoomLevel, setZoomLevel] = useState(6);
   const [selectedCommunity, setSelectedCommunity] = useState(null);
   const [data, setData] = useState(null);
-  const [showStatsOverlay, setShowStatsOverlay] = useState(false);
 
   useEffect(() => {
     fetchUnderservedData()
@@ -30,10 +29,6 @@ const App = () => {
       }
     : {};
 
-  const toggleStatsOverlay = () => {
-    setShowStatsOverlay((prev) => !prev);
-  };
-
   return (
     <div className="app">
       {/* Left Column: Map and its overlays */}
@@ -45,22 +40,17 @@ const App = () => {
             underservedData={underservedData}
             onCommunitySelect={setSelectedCommunity}
           />
-          {/* Loading banner shows at the bottom of the map if data hasn't loaded */}
+          {/* Loading banner at the bottom-centered of the map container */}
           {!data && (
             <div className="loading-banner">
               <div className="spinner"></div>
               <div className="loading-text">Analyzing Data...</div>
             </div>
           )}
-          {/* Button to toggle stats overlay */}
-          <div className="stats-toggle-button">
-            <button onClick={toggleStatsOverlay}>View Stats</button>
-          </div>
-          {/* Stats overlay that appears on top of the map */}
-          {showStatsOverlay && (
+          {/* Stats overlay positioned in the bottom-left of the map */}
+          {data && (
             <div className="stats-overlay">
               <Stats statsData={statsData} selectedCommunity={selectedCommunity} />
-              <button onClick={toggleStatsOverlay}>Close Stats</button>
             </div>
           )}
           {/* Search container overlaid on the map */}
@@ -81,7 +71,7 @@ const App = () => {
         </div>
       </div>
 
-      {/* Right Column: Different Component */}
+      {/* Right Column: Chat component (or any other component) */}
       <div className="right-column">
         <ChatComponent />
       </div>

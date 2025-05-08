@@ -24,12 +24,12 @@ const ChangeView = ({ center, zoom }) => {
   return null;
 };
 
-const Map = ({ mapCenter, zoomLevel = 20, underservedData, onCommunitySelect }) => {
+const Map = ({ mapCenter, zoomLevel = 6, underservedData, onCommunitySelect }) => {
   return (
     <MapContainer
       center={mapCenter}
       zoom={zoomLevel}
-      style={{ height: "100%", width: "100%" }}  // <-- Changed from 100vh/100vw to 100%
+      style={{ height: "100%", width: "100%" }} 
       scrollWheelZoom={true}
       zoomControl={false}
     >

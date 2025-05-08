@@ -16,12 +16,12 @@ body,
 /* Left column occupies 50% of the viewport */
 .left-column {
   position: relative;
-  width: 50%;
+  width: 70%;
 }
 
 /* Right column occupies the other 50% */
 .right-column {
-  width: 50%;
+  width: 30%;
   background-color: #f5f5f5; /* Optional background for differentiation */
   overflow-y: auto;
 }
@@ -39,7 +39,7 @@ body,
   width: 100%;
 }
 
-/* Search container positioned over the map (top-left) */
+/* Search container positioned in the top-left corner of the map */
 .search-container {
   position: absolute;
   top: 20px;
@@ -88,13 +88,13 @@ body,
   color: #333;
 }
 
-/* Stats overlay on top of the map */
+/* Stats overlay positioned in the bottom-left corner of the map container */
 .stats-overlay {
   position: absolute;
-  top: 20%;
-  right: 10%;
+  bottom: 20px;      /* Adjusted to place it in the bottom-left */
+  left: 20px;
   width: 300px;
-  max-height: 60%;
+  max-height: 50%;   /* Adjust as needed */
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   padding: 1rem;
@@ -103,80 +103,101 @@ body,
   overflow-y: auto;
 }
 
-/* Button to toggle stats overlay, positioned at bottom-right in map container */
-.stats-toggle-button {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1250;
-}
-
-.chat-component {
+/* Chat component container fills the entire available parent space */
+.chat-wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 10px;
-  background-color: #fff;
+  /* Removed fixed max-width and margin so that it fully occupies its parent */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Header styling */
 .chat-header {
-  background: #09f;
+  background: linear-gradient(135deg, #09f, #0056b3);
   color: #fff;
-  padding: 10px;
-  border-radius: 8px 8px 0 0;
+  padding: 16px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
+/* Messages container; occupies available space,
+   only scrolling when content exceeds its maximum height */
 .chat-messages {
   flex: 1;
-  padding: 10px;
   overflow-y: auto;
+  padding: 16px;
   background: #f9f9f9;
 }
 
+/* Each chat message container */
 .chat-message {
-  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
 }
 
+/* Align user messages to the right */
 .chat-message.user {
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
+/* Align AI messages to the left */
 .chat-message.ai {
-  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.message-sender {
-  font-weight: bold;
-  margin-right: 5px;
+/* Message bubble styling */
+.message-bubble {
+  background: #f1f0f0;
+  padding: 10px 16px;
+  border-radius: 20px;
+  max-width: 80%;
 }
 
+.chat-message.ai .message-bubble {
+  background: #e2eafd;
+}
+
+.chat-message.user .message-bubble {
+  background: #d1e7dd;
+}
+
+/* Input container */
 .chat-input {
   display: flex;
-  padding: 10px;
+  padding: 12px;
   border-top: 1px solid #ddd;
+  background: #fff;
+  flex-shrink: 0;
 }
 
+/* Input field styling */
 .chat-input input {
   flex: 1;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;
+  background: #f7f7f7;
 }
 
+/* Send button styling */
 .chat-input button {
-  margin-left: 10px;
+  margin-left: 8px;
   padding: 8px 16px;
-  background: #09f;
+  background: #0056b3;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
 }
 
 .chat-input button:hover {
-  background: #0073e6;
+  background: #004494;
 }
