@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import Map from "./components/Map";
 import Stats from "./components/Stats";
 import Search from "./components/Search";
-import ChatComponent from "./components/ChatComponent";
+import ChatToggle from "./components/ChatToggle"; 
 import { fetchUnderservedData } from "./fetchdata";
 
 const App = () => {
-  const [mapCenter, setMapCenter] = useState([-30.5595, 22.9375]); // South Africa center
+  const [mapCenter, setMapCenter] = useState([-30.5595, 22.9375]); 
   const [zoomLevel, setZoomLevel] = useState(6);
   const [selectedCommunity, setSelectedCommunity] = useState(null);
   const [data, setData] = useState(null);
@@ -31,7 +31,6 @@ const App = () => {
 
   return (
     <div className="app">
-      {/* Left Column: Map and its overlays */}
       <div className="left-column">
         <div className="map-container">
           <Map
@@ -40,20 +39,17 @@ const App = () => {
             underservedData={underservedData}
             onCommunitySelect={setSelectedCommunity}
           />
-          {/* Loading banner at the bottom-centered of the map container */}
           {!data && (
             <div className="loading-banner">
               <div className="spinner"></div>
               <div className="loading-text">Analyzing Data...</div>
             </div>
           )}
-          {/* Stats overlay positioned in the bottom-left of the map */}
           {data && (
             <div className="stats-overlay">
               <Stats statsData={statsData} selectedCommunity={selectedCommunity} />
             </div>
           )}
-          {/* Search container overlaid on the map */}
           <div className="search-container">
             <Search
               onSearchResult={(newCenter, communityDetails, newZoom) => {
@@ -71,10 +67,7 @@ const App = () => {
         </div>
       </div>
 
-      {/* Right Column: Chat component (or any other component) */}
-      <div className="right-column">
-        <ChatComponent />
-      </div>
+      <ChatToggle />
     </div>
   );
 };

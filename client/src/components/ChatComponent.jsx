@@ -1,14 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const ChatComponent = () => {
-  // Initial message from AI.
   const [messages, setMessages] = useState([
     { sender: "ai", text: "Hello! How can I help you today?" },
   ]);
   const [inputValue, setInputValue] = useState("");
   const messagesEndRef = useRef(null);
 
-  // Scroll to the bottom when messages update.
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -17,12 +15,10 @@ const ChatComponent = () => {
     const trimmedMessage = inputValue.trim();
     if (!trimmedMessage) return;
 
-    // Append the user's message.
     const newUserMessage = { sender: "user", text: trimmedMessage };
     setMessages((prev) => [...prev, newUserMessage]);
     setInputValue("");
 
-    // Simulate an AI response after a slight delay.
     setTimeout(() => {
       const aiResponse = {
         sender: "ai",
@@ -41,7 +37,7 @@ const ChatComponent = () => {
   return (
     <div className="chat-wrapper">
       <div className="chat-header">
-        <h2>AI Chat</h2>
+        <h2>Vivaro AI</h2>
       </div>
       <div className="chat-messages">
         {messages.map((msg, index) => (
