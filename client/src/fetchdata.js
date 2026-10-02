@@ -1,3 +1,5 @@
+import { API_BASE_URL } from "./config";
+
 let cachedData = null;
 
 export const fetchUnderservedData = async () => {
@@ -6,7 +8,7 @@ export const fetchUnderservedData = async () => {
   }
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/underserved");
+    const response = await fetch(`${API_BASE_URL}/underserved`);
     const data = await response.json();
 
     const globalRecommendations = data.recommendations || [];

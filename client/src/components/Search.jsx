@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API_BASE_URL } from "../config";
 
 const Search = ({ onSearchResult, onReset }) => {
   const [cityName, setCityName] = useState("");
@@ -16,7 +17,7 @@ const Search = ({ onSearchResult, onReset }) => {
         const cityCoords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
         const newZoom = 10;
 
-        fetch(`http://127.0.0.1:8000/analyze?lat=${cityCoords[0]}&lon=${cityCoords[1]}`)
+        fetch(`${API_BASE_URL}/analyze?lat=${cityCoords[0]}&lon=${cityCoords[1]}`)
           .then((response) => response.json())
           .then((analysisData) => {
             const communityDetails = {
