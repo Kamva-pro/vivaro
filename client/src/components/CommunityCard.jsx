@@ -1,4 +1,5 @@
 import React from "react";
+import { IconSchool, IconHospital, IconAlert, IconTarget } from "./Icons";
 
 const CommunityCard = ({ community, onSelect }) => {
   const hasSchoolDeficit = community.school_dist > 10;
@@ -17,40 +18,55 @@ const CommunityCard = ({ community, onSelect }) => {
         <div className="card-title-group">
           <h3 className="card-title">{community.name}</h3>
           <span className="card-coords">
-            {lat}°S, {lon}°E
+            {lat}° S, {lon}° E
           </span>
         </div>
         <div className="card-badge-container">
           {isCritical ? (
-            <span className="badge badge-critical">🚨 Critical Deficit</span>
+            <span className="badge badge-critical">
+              <IconAlert size={12} className="badge-icon" />
+              Critical Deficit
+            </span>
           ) : hasSchoolDeficit ? (
-            <span className="badge badge-warning">🏫 School Deficit</span>
+            <span className="badge badge-warning">
+              <IconSchool size={12} className="badge-icon" />
+              School Deficit
+            </span>
           ) : (
-            <span className="badge badge-info">🏥 Clinic Deficit</span>
+            <span className="badge badge-info">
+              <IconHospital size={12} className="badge-icon" />
+              Clinic Deficit
+            </span>
           )}
         </div>
       </div>
 
       <div className="card-stats-grid">
         <div className={`card-stat ${hasSchoolDeficit ? "stat-alert" : ""}`}>
-          <span className="stat-label">🏫 Nearest School</span>
+          <div className="stat-label-row">
+            <IconSchool size={13} className="stat-icon" />
+            <span className="stat-label">Nearest School</span>
+          </div>
           <span className="stat-value">{community.school_dist} km</span>
         </div>
         <div className={`card-stat ${hasClinicDeficit ? "stat-alert" : ""}`}>
-          <span className="stat-label">🏥 Nearest Clinic</span>
+          <div className="stat-label-row">
+            <IconHospital size={13} className="stat-icon" />
+            <span className="stat-label">Nearest Clinic</span>
+          </div>
           <span className="stat-value">{community.healthcare_dist} km</span>
         </div>
       </div>
 
       {community.recommendations && (
         <div className="card-rec-preview">
-          <span className="rec-sparkle">✨ AI Proposal:</span>
+          <IconTarget size={13} className="rec-icon" />
           <span className="rec-text">
             {community.recommendations.newSchool && community.recommendations.newClinic
-              ? "New School & Clinic Hub"
+              ? "New School & Clinic Hub Proposed"
               : community.recommendations.newSchool
-              ? "New School Recommended"
-              : "New Clinic Recommended"}
+              ? "New School Placement Proposed"
+              : "New Clinic Placement Proposed"}
           </span>
         </div>
       )}
@@ -64,7 +80,7 @@ const CommunityCard = ({ community, onSelect }) => {
           }}
         >
           <span>Inspect Street View</span>
-          <span className="arrow">➔</span>
+          <span className="arrow">→</span>
         </button>
       </div>
     </div>

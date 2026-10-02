@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+import {
+  IconSchool,
+  IconHospital,
+  IconAlert,
+  IconStreetView,
+  IconSatellite,
+  IconExternalLink,
+  IconClose,
+  IconTarget,
+} from "./Icons";
 
 const StreetViewModal = ({ community, onClose }) => {
   const [viewMode, setViewMode] = useState("street"); // 'street' or 'satellite'
@@ -10,7 +20,7 @@ const StreetViewModal = ({ community, onClose }) => {
 
   // Google Street View embed using lat,lon coordinates
   const streetViewUrl = `https://maps.google.com/maps?q=&layer=c&cbll=${lat},${lon}&cbp=11,0,0,0,0&output=svembed`;
-  
+
   // Google Satellite / Map embed
   const satelliteUrl = `https://maps.google.com/maps?q=${lat},${lon}&t=k&z=15&output=embed`;
 
@@ -27,15 +37,24 @@ const StreetViewModal = ({ community, onClose }) => {
         <div className="modal-header">
           <div>
             <div className="modal-badges">
-              <span className="badge badge-accent">🇿🇦 South Africa</span>
+              <span className="badge badge-accent">South Africa</span>
               {hasSchoolDeficit && hasClinicDeficit && (
-                <span className="badge badge-critical">🚨 Critical Deficit</span>
+                <span className="badge badge-critical">
+                  <IconAlert size={12} className="badge-icon" />
+                  Critical Deficit
+                </span>
               )}
               {hasSchoolDeficit && !hasClinicDeficit && (
-                <span className="badge badge-warning">🏫 School Deficit</span>
+                <span className="badge badge-warning">
+                  <IconSchool size={12} className="badge-icon" />
+                  School Deficit
+                </span>
               )}
               {!hasSchoolDeficit && hasClinicDeficit && (
-                <span className="badge badge-info">🏥 Clinic Deficit</span>
+                <span className="badge badge-info">
+                  <IconHospital size={12} className="badge-icon" />
+                  Clinic Deficit
+                </span>
               )}
             </div>
             <h2 className="modal-title">{community.name}</h2>
@@ -44,7 +63,7 @@ const StreetViewModal = ({ community, onClose }) => {
             </p>
           </div>
           <button className="modal-close-btn" onClick={onClose} aria-label="Close modal">
-            ✕
+            <IconClose size={18} />
           </button>
         </div>
 
@@ -58,13 +77,15 @@ const StreetViewModal = ({ community, onClose }) => {
                   className={`toggle-btn ${viewMode === "street" ? "active" : ""}`}
                   onClick={() => setViewMode("street")}
                 >
-                  🚶 360° Street View
+                  <IconStreetView size={14} className="btn-icon" />
+                  <span>360° Street View</span>
                 </button>
                 <button
                   className={`toggle-btn ${viewMode === "satellite" ? "active" : ""}`}
                   onClick={() => setViewMode("satellite")}
                 >
-                  🛰️ Satellite Imagery
+                  <IconSatellite size={14} className="btn-icon" />
+                  <span>Satellite Aerial</span>
                 </button>
               </div>
               <a
@@ -73,7 +94,8 @@ const StreetViewModal = ({ community, onClose }) => {
                 rel="noopener noreferrer"
                 className="external-map-link"
               >
-                Open in Google Maps ↗
+                <span>Google Maps</span>
+                <IconExternalLink size={12} />
               </a>
             </div>
 
@@ -88,8 +110,8 @@ const StreetViewModal = ({ community, onClose }) => {
             </div>
             <div className="view-footnote">
               {viewMode === "street"
-                ? "Showing street-level panorama. Note: In remote areas without direct Street View coverage, switch to Satellite view."
-                : "Showing high-resolution aerial satellite imagery of the community and surrounding terrain."}
+                ? "Showing street-level panorama. In rural communities without street camera coverage, toggle Satellite view for high-altitude inspection."
+                : "Showing high-resolution aerial satellite imagery of the community settlement pattern and road network."}
             </div>
           </div>
 
@@ -99,14 +121,14 @@ const StreetViewModal = ({ community, onClose }) => {
             <div className="metric-cards-grid">
               <div className={`metric-card ${hasSchoolDeficit ? "deficit-card" : "normal-card"}`}>
                 <div className="metric-header">
-                  <span className="metric-icon">🏫</span>
+                  <IconSchool size={16} className="metric-icon school-icon" />
                   <span className="metric-label">Nearest School</span>
                 </div>
                 <div className="metric-value">{community.school_dist} km</div>
                 <div className="metric-status">
                   {hasSchoolDeficit
-                    ? `⚠️ ${(community.school_dist - 10).toFixed(1)} km beyond acceptable threshold (10 km)`
-                    : "✅ Within acceptable distance"}
+                    ? `Warning: ${(community.school_dist - 10).toFixed(1)} km beyond acceptable policy threshold (10 km)`
+                    : "Within acceptable access radius"}
                 </div>
                 <div className="metric-bar">
                   <div
@@ -120,14 +142,14 @@ const StreetViewModal = ({ community, onClose }) => {
 
               <div className={`metric-card ${hasClinicDeficit ? "deficit-card" : "normal-card"}`}>
                 <div className="metric-header">
-                  <span className="metric-icon">🏥</span>
-                  <span className="metric-label">Nearest Healthcare</span>
+                  <IconHospital size={16} className="metric-icon clinic-icon" />
+                  <span className="metric-label">Nearest Healthcare Facility</span>
                 </div>
                 <div className="metric-value">{community.healthcare_dist} km</div>
                 <div className="metric-status">
                   {hasClinicDeficit
-                    ? `⚠️ ${(community.healthcare_dist - 10).toFixed(1)} km beyond acceptable threshold (10 km)`
-                    : "✅ Within acceptable distance"}
+                    ? `Warning: ${(community.healthcare_dist - 10).toFixed(1)} km beyond acceptable policy threshold (10 km)`
+                    : "Within acceptable access radius"}
                 </div>
                 <div className="metric-bar">
                   <div
@@ -143,36 +165,42 @@ const StreetViewModal = ({ community, onClose }) => {
             {/* AI Recommendation Section */}
             <div className="ai-recommendation-box">
               <div className="ai-box-header">
-                <span className="ai-sparkle">✨</span>
-                <span className="ai-box-title">AI Resource Allocation Plan</span>
+                <IconTarget size={16} className="ai-icon" />
+                <span className="ai-box-title">Resource Allocation Proposal</span>
               </div>
 
               {rec ? (
                 <div className="ai-details">
                   {rec.newSchool && (
                     <div className="rec-item">
-                      <div className="rec-type">📍 Proposed School Location</div>
+                      <div className="rec-type">
+                        <IconSchool size={13} className="rec-type-icon" />
+                        Proposed Educational Hub Coordinates
+                      </div>
                       <div className="rec-coords">{rec.newSchool}</div>
                     </div>
                   )}
 
                   {rec.newClinic && (
                     <div className="rec-item">
-                      <div className="rec-type">📍 Proposed Clinic Location</div>
+                      <div className="rec-type">
+                        <IconHospital size={13} className="rec-type-icon" />
+                        Proposed Primary Health Clinic Coordinates
+                      </div>
                       <div className="rec-coords">{rec.newClinic}</div>
                     </div>
                   )}
 
                   {rec.justification && (
                     <div className="rec-justification">
-                      <strong>Strategic Justification:</strong>
+                      <strong>Policy Justification:</strong>
                       <p>{rec.justification}</p>
                     </div>
                   )}
                 </div>
               ) : (
                 <p className="no-rec-text">
-                  This community metrics are currently balanced or awaiting cluster optimization.
+                  This community currently meets core spatial criteria or is under review.
                 </p>
               )}
             </div>

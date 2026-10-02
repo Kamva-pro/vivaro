@@ -1,7 +1,17 @@
 import React, { useState, useEffect, useMemo } from "react";
+import Navbar from "./components/Navbar";
 import CommunityCard from "./components/CommunityCard";
 import StreetViewModal from "./components/StreetViewModal";
 import ChatToggle from "./components/ChatToggle";
+import {
+  IconSearch,
+  IconClose,
+  IconAlert,
+  IconSchool,
+  IconHospital,
+  IconTarget,
+  IconLayers,
+} from "./components/Icons";
 import { fetchUnderservedData } from "./fetchdata";
 
 const App = () => {
@@ -25,7 +35,7 @@ const App = () => {
       })
       .catch((err) => {
         console.error("Error loading data:", err);
-        setError("Could not reach backend service. It might be waking up or offline.");
+        setError("Could not reach backend service. Verify Render cloud container.");
         setLoading(false);
       });
   }, []);
@@ -93,74 +103,87 @@ const App = () => {
 
   const displayedCommunities = filteredCommunities.slice(0, visibleCount);
 
+  const handleNavigate = (sectionId) => {
+    if (sectionId === "top") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <div className="platform-container">
-      {/* Dynamic Animated Ambient Background */}
+      {/* Background Ambience */}
       <div className="ambient-background">
         <div className="ambient-orb orb-1"></div>
         <div className="ambient-orb orb-2"></div>
         <div className="ambient-orb orb-3"></div>
       </div>
 
+      {/* Modern Top Navbar */}
+      <Navbar
+        loading={loading}
+        error={error}
+        onNavigateSection={handleNavigate}
+      />
+
       {/* Main Content Area */}
-      <div className="content-wrapper">
-        {/* Navigation Bar */}
-        <header className="navbar">
-          <div className="brand">
-            <div className="logo-icon">🌍</div>
-            <div>
-              <h1 className="brand-title">VIVARO</h1>
-              <span className="brand-badge">South Africa Social Development</span>
-            </div>
-          </div>
-
-          <div className="nav-actions">
-            <span className="live-status-pill">
-              <span className="status-dot"></span>
-              {loading ? "Connecting..." : "Live National Dataset"}
-            </span>
-          </div>
-        </header>
-
-        {/* Hero Impact Banner */}
-        <section className="hero-banner">
+      <main className="content-wrapper">
+        {/* Hero Section */}
+        <section id="overview" className="hero-banner">
           <div className="hero-content">
-            <h2 className="hero-title">
+            <span className="hero-eyebrow">National Spatial Infrastructure Assessment</span>
+            <h1 className="hero-title">
               Equitable Resource Allocation & Social Development
-            </h2>
+            </h1>
             <p className="hero-description">
-              Proactively analyzing the spatial distribution of schools and healthcare facilities across
-              South African communities. Explore deficits, inspect ground-level environments via street
-              views, and view AI-guided placement recommendations.
+              Spatial intelligence analyzing educational and healthcare infrastructure gaps across
+              South Africa. Inspect local community environments via ground-level street imagery and
+              evaluate AI-optimized facility placement proposals.
             </p>
           </div>
 
           {/* Metric KPI Cards */}
           <div className="kpi-grid">
             <div className="kpi-card">
-              <span className="kpi-label">Total Monitored</span>
+              <span className="kpi-label">Monitored Settlements</span>
               <span className="kpi-value">{stats.totalAnalyzed.toLocaleString()}</span>
-              <span className="kpi-sub">Municipalities & Towns</span>
+              <span className="kpi-sub">Total municipalities evaluated</span>
             </div>
             <div className="kpi-card kpi-warning">
-              <span className="kpi-label">Underserved Areas</span>
+              <div className="kpi-header-row">
+                <span className="kpi-label">Service Gaps</span>
+                <IconAlert size={14} className="kpi-icon-amber" />
+              </div>
               <span className="kpi-value">{stats.underservedTotal.toLocaleString()}</span>
-              <span className="kpi-sub">Facing Service Gaps</span>
+              <span className="kpi-sub">Communities beyond 10 km</span>
             </div>
             <div className="kpi-card kpi-critical">
-              <span className="kpi-label">Critical Deficit</span>
+              <div className="kpi-header-row">
+                <span className="kpi-label">Critical Deficit</span>
+                <IconAlert size={14} className="kpi-icon-red" />
+              </div>
               <span className="kpi-value">{stats.critical.toLocaleString()}</span>
-              <span className="kpi-sub">Lack Schools & Clinics</span>
+              <span className="kpi-sub">Lack both schools & clinics</span>
             </div>
             <div className="kpi-card kpi-school">
-              <span className="kpi-label">School Gaps</span>
+              <div className="kpi-header-row">
+                <span className="kpi-label">School Deficits</span>
+                <IconSchool size={14} className="kpi-icon-orange" />
+              </div>
               <span className="kpi-value">{stats.schools.toLocaleString()}</span>
-              <span className="kpi-sub">&gt; 10 km to Education</span>
+              <span className="kpi-sub">Over 10 km to education</span>
             </div>
             <div className="kpi-card kpi-clinic">
-              <span className="kpi-label">Healthcare Gaps</span>
+              <div className="kpi-header-row">
+                <span className="kpi-label">Healthcare Deficits</span>
+                <IconHospital size={14} className="kpi-icon-cyan" />
+              </div>
               <span className="kpi-value">{stats.healthcare.toLocaleString()}</span>
-              <span className="kpi-sub">&gt; 10 km to Clinic</span>
+              <span className="kpi-sub">Over 10 km to clinic</span>
             </div>
           </div>
         </section>
@@ -168,11 +191,11 @@ const App = () => {
         {/* Control Toolbar: Search & Filters */}
         <section className="toolbar-section">
           <div className="search-box-wrapper">
-            <span className="search-icon">🔍</span>
+            <IconSearch size={18} className="search-icon" />
             <input
               type="text"
               className="search-input"
-              placeholder="Search by city, town, or neighborhood (e.g. Cookhouse, Soweto)..."
+              placeholder="Search by city, town, or settlement (e.g. Cookhouse, Cradock, Soweto)..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
@@ -180,8 +203,12 @@ const App = () => {
               }}
             />
             {searchQuery && (
-              <button className="clear-search-btn" onClick={() => setSearchQuery("")}>
-                ✕
+              <button
+                className="clear-search-btn"
+                onClick={() => setSearchQuery("")}
+                aria-label="Clear search query"
+              >
+                <IconClose size={16} />
               </button>
             )}
           </div>
@@ -195,7 +222,8 @@ const App = () => {
                   setVisibleCount(24);
                 }}
               >
-                All Deficits ({stats.underservedTotal})
+                <span>All Deficits</span>
+                <span className="chip-count">{stats.underservedTotal}</span>
               </button>
               <button
                 className={`filter-chip chip-critical ${activeFilter === "critical" ? "active" : ""}`}
@@ -204,7 +232,9 @@ const App = () => {
                   setVisibleCount(24);
                 }}
               >
-                🚨 Critical Both ({stats.critical})
+                <IconAlert size={13} className="chip-icon" />
+                <span>Critical (Both)</span>
+                <span className="chip-count">{stats.critical}</span>
               </button>
               <button
                 className={`filter-chip chip-school ${activeFilter === "schools" ? "active" : ""}`}
@@ -213,7 +243,9 @@ const App = () => {
                   setVisibleCount(24);
                 }}
               >
-                🏫 School Deficits ({stats.schools})
+                <IconSchool size={13} className="chip-icon" />
+                <span>School Deficits</span>
+                <span className="chip-count">{stats.schools}</span>
               </button>
               <button
                 className={`filter-chip chip-clinic ${activeFilter === "healthcare" ? "active" : ""}`}
@@ -222,12 +254,14 @@ const App = () => {
                   setVisibleCount(24);
                 }}
               >
-                🏥 Healthcare Deficits ({stats.healthcare})
+                <IconHospital size={13} className="chip-icon" />
+                <span>Healthcare Deficits</span>
+                <span className="chip-count">{stats.healthcare}</span>
               </button>
             </div>
 
             <div className="sort-dropdown-wrapper">
-              <label htmlFor="sort-select" className="sort-label">Sort:</label>
+              <span className="sort-label">Sort:</span>
               <select
                 id="sort-select"
                 className="sort-select"
@@ -235,8 +269,8 @@ const App = () => {
                 onChange={(e) => setSortBy(e.target.value)}
               >
                 <option value="need">Most Urgent Need</option>
-                <option value="school">Highest School Distance</option>
-                <option value="clinic">Highest Clinic Distance</option>
+                <option value="school">Furthest School Distance</option>
+                <option value="clinic">Furthest Healthcare Distance</option>
                 <option value="name">Alphabetical (A-Z)</option>
               </select>
             </div>
@@ -244,13 +278,16 @@ const App = () => {
         </section>
 
         {/* Communities Section */}
-        <section className="communities-section">
+        <section id="communities" className="communities-section">
           <div className="section-header-bar">
-            <h3 className="section-title">
-              Impact Explorer: Neighborhoods &amp; Communities In Need
-            </h3>
+            <div>
+              <h2 className="section-title">Settlement Infrastructure Directory</h2>
+              <p className="section-sub">
+                Select any community to inspect ground-level street view, terrain, and facility allocation proposals.
+              </p>
+            </div>
             <span className="results-count">
-              Showing {displayedCommunities.length} of {filteredCommunities.length} matching communities
+              Showing {displayedCommunities.length} of {filteredCommunities.length} communities
             </span>
           </div>
 
@@ -258,10 +295,10 @@ const App = () => {
           {loading && (
             <div className="state-panel loading-state">
               <div className="loading-spinner"></div>
-              <h4>Analyzing South African Communities...</h4>
-              <p>Fetching geospatial facility density and AI allocation models.</p>
+              <h4>Analyzing National Infrastructure Dataset...</h4>
+              <p>Evaluating nearest neighbor distance matrices across schools and clinics.</p>
               <span className="cold-start-tip">
-                Tip: Cloud services waking up on Render may take ~30s on first load.
+                Render free cloud services may take ~30s on cold-start.
               </span>
             </div>
           )}
@@ -269,8 +306,8 @@ const App = () => {
           {/* Error State */}
           {error && !loading && (
             <div className="state-panel error-state">
-              <span className="error-icon">⚠️</span>
-              <h4>Connection Notice</h4>
+              <IconAlert size={36} className="error-icon-svg" />
+              <h4>Connection Status</h4>
               <p>{error}</p>
               <button
                 className="retry-btn"
@@ -283,7 +320,7 @@ const App = () => {
                       setLoading(false);
                     })
                     .catch((err) => {
-                      setError("Still unable to reach backend. Please verify your Render service.");
+                      setError("Unable to connect to backend service. Please check Render status.");
                       setLoading(false);
                     });
                 }}
@@ -312,7 +349,7 @@ const App = () => {
                     className="load-more-btn"
                     onClick={() => setVisibleCount((prev) => prev + 24)}
                   >
-                    Load More Communities ({filteredCommunities.length - visibleCount} remaining)
+                    Load More Settlements ({filteredCommunities.length - visibleCount} remaining)
                   </button>
                 </div>
               )}
@@ -322,9 +359,9 @@ const App = () => {
           {/* Empty State */}
           {!loading && !error && displayedCommunities.length === 0 && (
             <div className="state-panel empty-state">
-              <span className="empty-icon">🔎</span>
-              <h4>No Communities Match Your Filter</h4>
-              <p>Try clearing your search query or switching to another category filter.</p>
+              <IconSearch size={36} className="empty-icon-svg" />
+              <h4>No Communities Found</h4>
+              <p>No settlements match your current search query or active filter.</p>
               <button
                 className="clear-filters-btn"
                 onClick={() => {
@@ -332,12 +369,45 @@ const App = () => {
                   setActiveFilter("all");
                 }}
               >
-                Reset Filters
+                Reset Search & Filters
               </button>
             </div>
           )}
         </section>
-      </div>
+
+        {/* Methodology Section */}
+        <section id="methodology" className="methodology-section">
+          <div className="methodology-card">
+            <div className="methodology-header">
+              <IconLayers size={20} className="methodology-icon" />
+              <h3 className="methodology-title">Spatial Allocation Methodology</h3>
+            </div>
+            <div className="methodology-grid">
+              <div className="methodology-col">
+                <h4>Spatial Distance Standard</h4>
+                <p>
+                  Communities located greater than 10 km from the nearest public educational institution or
+                  primary healthcare facility are flagged as critical underserved regions under national planning standards.
+                </p>
+              </div>
+              <div className="methodology-col">
+                <h4>Haversine Spatial Indexing</h4>
+                <p>
+                  High-speed BallTree spatial data structures evaluate geodesic haversine distance matrices
+                  across 8,700+ schools, 4,200+ clinics, and 2,000+ settlements simultaneously.
+                </p>
+              </div>
+              <div className="methodology-col">
+                <h4>K-Means Cluster Optimization</h4>
+                <p>
+                  Proposed facility placements are computed using geographic centroid clustering to identify
+                  optimal locations serving the largest aggregate underserved population.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
       {/* Street View / Inspection Modal */}
       {selectedCommunity && (

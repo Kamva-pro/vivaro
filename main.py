@@ -43,50 +43,30 @@ def get_schools():
 def get_healthcare():
     return load_geojson(HEALTHCARE_FILE)
 
+UNDERSERVED_CACHE_FILE = "data/underserved_cache.json"
+
 @app.get("/health")
 def health_check():
     return {
         "status": "online",
-        "version": "v2.0-optimized",
-        "cached": _cached_underserved_data is not None
+        "version": "v2.1-stable",
+        "has_precomputed_data": os.path.exists(UNDERSERVED_CACHE_FILE)
     }
-
-@app.on_event("startup")
-def startup_event():
-    global _cached_underserved_data
-    try:
-        results = analyze_underserved()  
-        recommendations = generate_recommendations(results)
-        _cached_underserved_data = {
-            "total_cities": len(cities),  
-            "underserved": results,
-            "recommendations": recommendations
-        }
-        print("Precomputed underserved data on startup successfully!")
-    except Exception as e:
-        print(f"Error precomputing on startup: {e}")
-
-_cached_underserved_data = None
 
 @app.get("/underserved")
 def get_underserved_communities():
-    global _cached_underserved_data
-    if _cached_underserved_data is not None:
-        return _cached_underserved_data
+    if os.path.exists(UNDERSERVED_CACHE_FILE):
+        return load_geojson(UNDERSERVED_CACHE_FILE)
 
+    results = analyze_underserved()  
+    recommendations = generate_recommendations(results)
 
-    try:
-        results = analyze_underserved()  
-        recommendations = generate_recommendations(results)
+    return {
+        "total_cities": len(cities),  
+        "underserved": results,
+        "recommendations": recommendations
+    }
 
-        _cached_underserved_data = {
-            "total_cities": len(cities),  
-            "underserved": results,
-            "recommendations": recommendations
-        }
-        return _cached_underserved_data
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Analysis calculation error: {str(e)}")
 
 
 @app.get("/search")
