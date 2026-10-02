@@ -1,5 +1,17 @@
-/node_modules
+# Dependencies & build outputs
+node_modules/
+client/node_modules/
+client/dist/
 package-lock.json
-.python-version
-.venv/
+
+# Python internal files & caches
 __pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.python-version
+
+# OS internal files
+.DS_Store
+Thumbs.db
