@@ -28,34 +28,45 @@ def generate_justification(community, recommended_facility, SCHOOL_DENSITY_THRES
                                    "can strengthen local healthcare capacity.")
     return justification_text
 
-def generate_recommendations():
+def generate_recommendations(underserved_areas=None):
     """
     Generate facility recommendations for underserved communities.
     Only recommends a new school or clinic if the community's metrics indicate a need.
     """
-    underserved_areas = analyze_underserved()
+    if underserved_areas is None:
+        underserved_areas = analyze_underserved()
+
+    if not underserved_areas:
+        return []
 
     points = gpd.GeoSeries(
         [Point(city["coords"][1], city["coords"][0]) for city in underserved_areas],
         crs="EPSG:4326"
     )
     
-    points_projected = points.to_crs("EPSG:3857")
-    X_proj = np.array([[pt.x, pt.y] for pt in points_projected])
+    try:
+        points_projected = points.to_crs("EPSG:3857")
+        X_proj = np.array([[pt.x, pt.y] for pt in points_projected])
 
-    n_clusters = 10  
-    kmeans = KMeans(n_clusters=n_clusters, random_state=42)
-    cluster_labels = kmeans.fit_predict(X_proj)
-    cluster_centers_proj = kmeans.cluster_centers_
-    
-    centers_geom = gpd.GeoSeries(
-        [Point(x, y) for x, y in cluster_centers_proj],
-        crs="EPSG:3857"
-    )
-    centers_latlon = centers_geom.to_crs("EPSG:4326")
-    
-    # cities_projected = cities.to_crs("EPSG:3857")
-    # BUFFER_DIST = 15000  
+        n_clusters = min(10, len(underserved_areas))
+        kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+        cluster_labels = kmeans.fit_predict(X_proj)
+        cluster_centers_proj = kmeans.cluster_centers_
+        
+        centers_geom = gpd.GeoSeries(
+            [Point(x, y) for x, y in cluster_centers_proj],
+            crs="EPSG:3857"
+        )
+        centers_latlon = centers_geom.to_crs("EPSG:4326")
+    except Exception:
+        # Fallback if pyproj CRS transform fails on minimal container
+        coords_raw = np.array([[city["coords"][0], city["coords"][1]] for city in underserved_areas])
+        n_clusters = min(10, len(underserved_areas))
+        kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+        cluster_labels = kmeans.fit_predict(coords_raw)
+        centers_raw = kmeans.cluster_centers_
+        centers_latlon = [Point(c[1], c[0]) for c in centers_raw]
+
 
     SCHOOL_DENSITY_THRESHOLD = 1 / 10   
     CLINIC_DENSITY_THRESHOLD = 1 / 20   

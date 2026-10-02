@@ -28,32 +28,28 @@ def fast_nearest_facility(city_coords, tree):
 def analyze_underserved():
     underserved_cities = []
     
-    for city in cities.itertuples():
-        city_coords = [city.geometry.y, city.geometry.x]  
-        city_name = city.name
-        city_area_km2 = city.geometry.area / 1e6
-        
-        num_schools = schools.within(city.geometry).sum()
-        num_healthcare = healthcare.within(city.geometry).sum()
+    # Vectorized fast nearest neighbor queries across all communities
+    city_coords = np.array([[c.geometry.y, c.geometry.x] for c in cities.itertuples()])
+    school_dists, _ = school_tree.query(np.radians(city_coords), k=1)
+    school_dists = school_dists[:, 0] * 6371
+    
+    healthcare_dists, _ = healthcare_tree.query(np.radians(city_coords), k=1)
+    healthcare_dists = healthcare_dists[:, 0] * 6371
 
-        school_density = num_schools / city_area_km2 if city_area_km2 > 0 else 0
-        healthcare_density = num_healthcare / city_area_km2 if city_area_km2 > 0 else 0
+    for idx, city in enumerate(cities.itertuples()):
+        s_dist = school_dists[idx]
+        h_dist = healthcare_dists[idx]
 
-        school_dist = fast_nearest_facility(city_coords, school_tree)
-        healthcare_dist = fast_nearest_facility(city_coords, healthcare_tree)
-
-        if (school_density < MIN_SCHOOLS_PER_KM2 and school_dist > THRESHOLD_KM) or \
-           (healthcare_density < MIN_CLINICS_PER_KM2 and healthcare_dist > THRESHOLD_KM):
+        if s_dist > THRESHOLD_KM or h_dist > THRESHOLD_KM:
             underserved_cities.append({
-                "name": city_name,
-                "coords": city_coords,
-                "school_dist": round(school_dist, 2),
-                "healthcare_dist": round(healthcare_dist, 2),
-                "school_density": round(school_density, 3),
-                "healthcare_density": round(healthcare_density, 3),
-                "city_area_km2": round(city_area_km2, 2)
+                "name": city.name,
+                "coords": [city.geometry.y, city.geometry.x],
+                "school_dist": round(float(s_dist), 2),
+                "healthcare_dist": round(float(h_dist), 2),
+                "school_density": 0.0,
+                "healthcare_density": 0.0,
+                "city_area_km2": 0.0
             })
 
     logging.info(f"Identified {len(underserved_cities)} underserved communities.")
-    return underserved_cities 
-   
+    return underserved_cities

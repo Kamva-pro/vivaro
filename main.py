@@ -43,23 +43,27 @@ def get_schools():
 def get_healthcare():
     return load_geojson(HEALTHCARE_FILE)
 
+_cached_underserved_data = None
+
 @app.get("/underserved")
 def get_underserved_communities():
-    results = analyze_underserved()  
-    recommendations = generate_recommendations()
+    global _cached_underserved_data
+    if _cached_underserved_data is not None:
+        return _cached_underserved_data
 
-    if not results:
-        return {"error": "No underserved communities found"}
-    
-    if not recommendations:
-        return {"error:" "No recommendations found"}
-    
+    try:
+        results = analyze_underserved()  
+        recommendations = generate_recommendations(results)
 
-    return {
-        "total_cities": len(cities),  
-        "underserved": results,
-        "recommendations": recommendations
-    }
+        _cached_underserved_data = {
+            "total_cities": len(cities),  
+            "underserved": results,
+            "recommendations": recommendations
+        }
+        return _cached_underserved_data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Analysis calculation error: {str(e)}")
+
 
 @app.get("/search")
 def search_city(city_name: str):
