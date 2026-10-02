@@ -5,7 +5,6 @@ import {
   IconAlert,
   IconStreetView,
   IconSatellite,
-  IconExternalLink,
   IconClose,
   IconTarget,
   IconPin,
@@ -57,10 +56,6 @@ const StreetViewModal = ({ community, onClose }) => {
 
   // Google Maps Hybrid Embed (Never blocked by X-Frame-Options, works everywhere in SA)
   const embedUrl = `https://maps.google.com/maps?q=${currentCoords.lat},${currentCoords.lon}&t=${mapType}&z=16&ie=UTF8&iwloc=&output=embed`;
-
-  // 1-Click Launchers for native 360 Street View and Google Maps
-  const streetViewPanoUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${currentCoords.lat},${currentCoords.lon}`;
-  const fullMapUrl = `https://www.google.com/maps/search/?api=1&query=${currentCoords.lat},${currentCoords.lon}`;
 
   const hasSchoolDeficit = community.school_dist > 10;
   const hasClinicDeficit = community.healthcare_dist > 10;
@@ -159,29 +154,6 @@ const StreetViewModal = ({ community, onClose }) => {
                   <span>Street Roads</span>
                 </button>
               </div>
-
-              <div className="view-external-actions">
-                <a
-                  href={streetViewPanoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="external-action-btn street-view-btn"
-                  title="Open 360° Street View directly in Google Maps"
-                >
-                  <IconStreetView size={13} />
-                  <span>Open 360° Street View</span>
-                  <IconExternalLink size={11} />
-                </a>
-                <a
-                  href={fullMapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="external-action-btn"
-                >
-                  <span>Google Maps</span>
-                  <IconExternalLink size={11} />
-                </a>
-              </div>
             </div>
 
             {/* Embedded Interactive Viewer */}
@@ -200,7 +172,7 @@ const StreetViewModal = ({ community, onClose }) => {
               <strong>{targetLabel}:</strong> {targetDescription}
               <br />
               <span className="footnote-sub">
-                Interactive zoom &amp; pan supported inside the viewer above. Click <em>Open 360° Street View</em> to launch ground-level panoramic cameras where covered.
+                Interactive zoom, pan, and road inspections are hosted directly inside this viewer.
               </span>
             </div>
           </div>
