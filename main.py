@@ -43,6 +43,29 @@ def get_schools():
 def get_healthcare():
     return load_geojson(HEALTHCARE_FILE)
 
+@app.get("/health")
+def health_check():
+    return {
+        "status": "online",
+        "version": "v2.0-optimized",
+        "cached": _cached_underserved_data is not None
+    }
+
+@app.on_event("startup")
+def startup_event():
+    global _cached_underserved_data
+    try:
+        results = analyze_underserved()  
+        recommendations = generate_recommendations(results)
+        _cached_underserved_data = {
+            "total_cities": len(cities),  
+            "underserved": results,
+            "recommendations": recommendations
+        }
+        print("Precomputed underserved data on startup successfully!")
+    except Exception as e:
+        print(f"Error precomputing on startup: {e}")
+
 _cached_underserved_data = None
 
 @app.get("/underserved")
@@ -50,6 +73,7 @@ def get_underserved_communities():
     global _cached_underserved_data
     if _cached_underserved_data is not None:
         return _cached_underserved_data
+
 
     try:
         results = analyze_underserved()  
