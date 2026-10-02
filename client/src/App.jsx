@@ -66,10 +66,17 @@ const App = () => {
   const filteredCommunities = useMemo(() => {
     let list = underservedList;
 
-    // Search query filter
+    // Search query filter (matches name, city, province, region, or full location)
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase().trim();
-      list = list.filter((c) => c.name && c.name.toLowerCase().includes(q));
+      list = list.filter(
+        (c) =>
+          (c.name && c.name.toLowerCase().includes(q)) ||
+          (c.city && c.city.toLowerCase().includes(q)) ||
+          (c.province && c.province.toLowerCase().includes(q)) ||
+          (c.region && c.region.toLowerCase().includes(q)) ||
+          (c.full_location && c.full_location.toLowerCase().includes(q))
+      );
     }
 
     // Category filter
@@ -195,7 +202,7 @@ const App = () => {
             <input
               type="text"
               className="search-input"
-              placeholder="Search by city, town, or settlement (e.g. Cookhouse, Cradock, Soweto)..."
+              placeholder="Search by settlement, city, or province (e.g. Eldorado, Blouberg, Limpopo, Soweto, Cookhouse)..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);

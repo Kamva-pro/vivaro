@@ -67,7 +67,13 @@ const StreetViewModal = ({ community, onClose }) => {
         <div className="modal-header">
           <div>
             <div className="modal-badges">
-              <span className="badge badge-accent">South Africa</span>
+              <span className="badge badge-accent">{community.province || "South Africa"}</span>
+              {community.city && community.city !== community.name && (
+                <span className="badge badge-city">
+                  <IconPin size={11} className="badge-icon" />
+                  {community.city}
+                </span>
+              )}
               {hasSchoolDeficit && hasClinicDeficit && (
                 <span className="badge badge-critical">
                   <IconAlert size={12} className="badge-icon" />
@@ -88,6 +94,10 @@ const StreetViewModal = ({ community, onClose }) => {
               )}
             </div>
             <h2 className="modal-title">{community.name}</h2>
+            <div className="modal-location-subtitle">
+              <IconPin size={13} className="modal-subtitle-pin" />
+              <span>{community.full_location || community.region || "South Africa"}</span>
+            </div>
             <p className="modal-coords">
               Inspecting: {targetLabel} ({currentCoords.lat.toFixed(4)}° S, {currentCoords.lon.toFixed(4)}° E)
             </p>

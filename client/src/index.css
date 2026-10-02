@@ -126,7 +126,7 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
 .navbar-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
+  padding: 1.35rem 2.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,7 +173,7 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
 
 .navbar-nav {
   display: flex;
-  gap: 1.75rem;
+  gap: 2.25rem;
 }
 
 .nav-link {
@@ -181,10 +181,10 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
   border: none;
   color: var(--text-secondary);
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
-  padding: 0.25rem 0;
+  padding: 0.35rem 0.2rem;
   position: relative;
   transition: color 0.2s ease;
 }
@@ -217,10 +217,10 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
 .system-status-indicator {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.35rem 0.85rem;
+  gap: 0.55rem;
+  padding: 0.45rem 1.1rem;
   border-radius: var(--radius-full);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
@@ -609,13 +609,40 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.card-location-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  margin-bottom: 0.4rem;
+  max-width: 100%;
+}
+
+.card-pin-icon {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.card-location-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-coords {
   font-size: 0.75rem;
   color: var(--text-muted);
   font-family: monospace;
+  display: block;
 }
 
 .card-badge-container {
@@ -655,6 +682,12 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
   background: rgba(99, 102, 241, 0.15);
   color: #c7d2fe;
   border: 1px solid rgba(99, 102, 241, 0.35);
+}
+
+.badge-city {
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.35);
 }
 
 /* Card Stats */
@@ -956,6 +989,22 @@ h1, h2, h3, h4, .brand-name, .kpi-value, .metric-value {
   font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+}
+
+.modal-location-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-top: 0.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.modal-subtitle-pin {
+  color: var(--accent-cyan);
+  flex-shrink: 0;
 }
 
 .modal-coords {

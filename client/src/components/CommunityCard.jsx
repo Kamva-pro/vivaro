@@ -1,5 +1,5 @@
 import React from "react";
-import { IconSchool, IconHospital, IconAlert, IconTarget } from "./Icons";
+import { IconSchool, IconHospital, IconAlert, IconTarget, IconPin } from "./Icons";
 
 const CommunityCard = ({ community, onSelect }) => {
   const hasSchoolDeficit = community.school_dist > 10;
@@ -9,6 +9,8 @@ const CommunityCard = ({ community, onSelect }) => {
   const lat = community.coords ? community.coords[0].toFixed(3) : 0;
   const lon = community.coords ? community.coords[1].toFixed(3) : 0;
 
+  const locationDisplay = community.region || (community.city ? `${community.city}, ${community.province || 'South Africa'}` : community.province || "South Africa");
+
   return (
     <div
       className={`community-card ${isCritical ? "card-critical" : ""}`}
@@ -17,6 +19,10 @@ const CommunityCard = ({ community, onSelect }) => {
       <div className="card-top">
         <div className="card-title-group">
           <h3 className="card-title">{community.name}</h3>
+          <div className="card-location-meta" title={community.full_location || locationDisplay}>
+            <IconPin size={12} className="card-pin-icon" />
+            <span className="card-location-text">{locationDisplay}</span>
+          </div>
           <span className="card-coords">
             {lat}° S, {lon}° E
           </span>
