@@ -8,32 +8,67 @@ import {
   IconExternalLink,
   IconClose,
   IconTarget,
+  IconPin,
 } from "./Icons";
 
-const StreetViewModal = ({ community, onClose }) => {
-  const [viewMode, setViewMode] = useState("street"); // 'street' or 'satellite'
+const parseCoords = (coordsInput) => {
+  if (!coordsInput) return null;
+  if (Array.isArray(coordsInput) && coordsInput.length >= 2) {
+    return { lat: Number(coordsInput[0]), lon: Number(coordsInput[1]) };
+  }
+  if (typeof coordsInput === "string") {
+    const parts = coordsInput.split(",").map((p) => Number(p.trim()));
+    if (parts.length >= 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+      return { lat: parts[0], lon: parts[1] };
+    }
+  }
+  return null;
+};
 
+const StreetViewModal = ({ community, onClose }) => {
   if (!community) return null;
 
-  const lat = community.coords ? community.coords[0] : 0;
-  const lon = community.coords ? community.coords[1] : 0;
-
-  // Google Street View embed using lat,lon coordinates
-  const streetViewUrl = `https://maps.google.com/maps?q=&layer=c&cbll=${lat},${lon}&cbp=11,0,0,0,0&output=svembed`;
-
-  // Google Satellite / Map embed
-  const satelliteUrl = `https://maps.google.com/maps?q=${lat},${lon}&t=k&z=15&output=embed`;
-
-  const externalMapUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
-
+  const communityCoords = parseCoords(community.coords) || { lat: -30.5595, lon: 22.9375 };
   const rec = community.recommendations;
+  const schoolCoords = rec && rec.newSchool ? parseCoords(rec.newSchool) : null;
+  const clinicCoords = rec && rec.newClinic ? parseCoords(rec.newClinic) : null;
+
+  // Active target being inspected: 'community', 'school', or 'clinic'
+  const [activeTarget, setActiveTarget] = useState(
+    schoolCoords ? "school" : clinicCoords ? "clinic" : "community"
+  );
+  // View layer: 'hybrid' (satellite + roads), 'satellite' (pure aerial), 'roadmap'
+  const [mapType, setMapType] = useState("h"); // 'h' = hybrid, 'k' = satellite, 'm' = roadmap
+
+  // Determine active coordinates to display
+  let currentCoords = communityCoords;
+  let targetLabel = "Existing Community Settlement";
+  let targetDescription = "Ground terrain and settlement layout of the current populated area.";
+
+  if (activeTarget === "school" && schoolCoords) {
+    currentCoords = schoolCoords;
+    targetLabel = "Proposed School Placement Site";
+    targetDescription = "Geographic cluster centroid selected by AI optimization to maximize access for surrounding learners.";
+  } else if (activeTarget === "clinic" && clinicCoords) {
+    currentCoords = clinicCoords;
+    targetLabel = "Proposed Primary Healthcare Site";
+    targetDescription = "Strategic position selected to minimize emergency travel distance for underserved households.";
+  }
+
+  // Google Maps Hybrid Embed (Never blocked by X-Frame-Options, works everywhere in SA)
+  const embedUrl = `https://maps.google.com/maps?q=${currentCoords.lat},${currentCoords.lon}&t=${mapType}&z=16&ie=UTF8&iwloc=&output=embed`;
+
+  // 1-Click Launchers for native 360 Street View and Google Maps
+  const streetViewPanoUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${currentCoords.lat},${currentCoords.lon}`;
+  const fullMapUrl = `https://www.google.com/maps/search/?api=1&query=${currentCoords.lat},${currentCoords.lon}`;
+
   const hasSchoolDeficit = community.school_dist > 10;
   const hasClinicDeficit = community.healthcare_dist > 10;
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        {/* Modal Header */}
+        {/* Header */}
         <div className="modal-header">
           <div>
             <div className="modal-badges">
@@ -59,7 +94,7 @@ const StreetViewModal = ({ community, onClose }) => {
             </div>
             <h2 className="modal-title">{community.name}</h2>
             <p className="modal-coords">
-              Coordinates: {lat.toFixed(4)}° S, {lon.toFixed(4)}° E
+              Inspecting: {targetLabel} ({currentCoords.lat.toFixed(4)}° S, {currentCoords.lon.toFixed(4)}° E)
             </p>
           </div>
           <button className="modal-close-btn" onClick={onClose} aria-label="Close modal">
@@ -67,51 +102,106 @@ const StreetViewModal = ({ community, onClose }) => {
           </button>
         </div>
 
+        {/* Target Site Selector Tabs */}
+        <div className="target-selector-bar">
+          <span className="target-selector-label">Inspect Location:</span>
+          <div className="target-buttons">
+            <button
+              className={`target-btn ${activeTarget === "community" ? "active" : ""}`}
+              onClick={() => setActiveTarget("community")}
+            >
+              <IconPin size={13} />
+              <span>Current Settlement</span>
+            </button>
+
+            {schoolCoords && (
+              <button
+                className={`target-btn target-school ${activeTarget === "school" ? "active" : ""}`}
+                onClick={() => setActiveTarget("school")}
+              >
+                <IconSchool size={13} />
+                <span>Proposed School Site</span>
+              </button>
+            )}
+
+            {clinicCoords && (
+              <button
+                className={`target-btn target-clinic ${activeTarget === "clinic" ? "active" : ""}`}
+                onClick={() => setActiveTarget("clinic")}
+              >
+                <IconHospital size={13} />
+                <span>Proposed Clinic Site</span>
+              </button>
+            )}
+          </div>
+        </div>
+
         {/* Modal Body */}
         <div className="modal-body-grid">
-          {/* Left Column: Visual Street View / Satellite View */}
+          {/* Left Column: Visual Map / Satellite / Street View */}
           <div className="view-container">
             <div className="view-toggle-bar">
               <div className="view-mode-buttons">
                 <button
-                  className={`toggle-btn ${viewMode === "street" ? "active" : ""}`}
-                  onClick={() => setViewMode("street")}
+                  className={`toggle-btn ${mapType === "h" ? "active" : ""}`}
+                  onClick={() => setMapType("h")}
+                  title="Satellite terrain with road labels"
                 >
-                  <IconStreetView size={14} className="btn-icon" />
-                  <span>360° Street View</span>
+                  <IconSatellite size={13} />
+                  <span>Hybrid Satellite</span>
                 </button>
                 <button
-                  className={`toggle-btn ${viewMode === "satellite" ? "active" : ""}`}
-                  onClick={() => setViewMode("satellite")}
+                  className={`toggle-btn ${mapType === "m" ? "active" : ""}`}
+                  onClick={() => setMapType("m")}
+                  title="Standard road layout"
                 >
-                  <IconSatellite size={14} className="btn-icon" />
-                  <span>Satellite Aerial</span>
+                  <IconStreetView size={13} />
+                  <span>Street Roads</span>
                 </button>
               </div>
-              <a
-                href={externalMapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="external-map-link"
-              >
-                <span>Google Maps</span>
-                <IconExternalLink size={12} />
-              </a>
+
+              <div className="view-external-actions">
+                <a
+                  href={streetViewPanoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="external-action-btn street-view-btn"
+                  title="Open 360° Street View directly in Google Maps"
+                >
+                  <IconStreetView size={13} />
+                  <span>Open 360° Street View</span>
+                  <IconExternalLink size={11} />
+                </a>
+                <a
+                  href={fullMapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="external-action-btn"
+                >
+                  <span>Google Maps</span>
+                  <IconExternalLink size={11} />
+                </a>
+              </div>
             </div>
 
+            {/* Embedded Interactive Viewer */}
             <div className="iframe-wrapper">
               <iframe
+                key={`${currentCoords.lat}-${currentCoords.lon}-${mapType}`}
                 title={`Inspection view of ${community.name}`}
-                src={viewMode === "street" ? streetViewUrl : satelliteUrl}
+                src={embedUrl}
                 className="street-view-iframe"
                 loading="lazy"
                 allowFullScreen
               />
             </div>
+
             <div className="view-footnote">
-              {viewMode === "street"
-                ? "Showing street-level panorama. In rural communities without street camera coverage, toggle Satellite view for high-altitude inspection."
-                : "Showing high-resolution aerial satellite imagery of the community settlement pattern and road network."}
+              <strong>{targetLabel}:</strong> {targetDescription}
+              <br />
+              <span className="footnote-sub">
+                Interactive zoom &amp; pan supported inside the viewer above. Click <em>Open 360° Street View</em> to launch ground-level panoramic cameras where covered.
+              </span>
             </div>
           </div>
 
@@ -127,7 +217,7 @@ const StreetViewModal = ({ community, onClose }) => {
                 <div className="metric-value">{community.school_dist} km</div>
                 <div className="metric-status">
                   {hasSchoolDeficit
-                    ? `Warning: ${(community.school_dist - 10).toFixed(1)} km beyond acceptable policy threshold (10 km)`
+                    ? `Warning: ${(community.school_dist - 10).toFixed(1)} km beyond 10 km threshold`
                     : "Within acceptable access radius"}
                 </div>
                 <div className="metric-bar">
@@ -148,7 +238,7 @@ const StreetViewModal = ({ community, onClose }) => {
                 <div className="metric-value">{community.healthcare_dist} km</div>
                 <div className="metric-status">
                   {hasClinicDeficit
-                    ? `Warning: ${(community.healthcare_dist - 10).toFixed(1)} km beyond acceptable policy threshold (10 km)`
+                    ? `Warning: ${(community.healthcare_dist - 10).toFixed(1)} km beyond 10 km threshold`
                     : "Within acceptable access radius"}
                 </div>
                 <div className="metric-bar">
@@ -172,20 +262,30 @@ const StreetViewModal = ({ community, onClose }) => {
               {rec ? (
                 <div className="ai-details">
                   {rec.newSchool && (
-                    <div className="rec-item">
+                    <div
+                      className={`rec-item ${activeTarget === "school" ? "rec-item-highlight" : ""}`}
+                      onClick={() => setActiveTarget("school")}
+                      style={{ cursor: "pointer" }}
+                    >
                       <div className="rec-type">
                         <IconSchool size={13} className="rec-type-icon" />
-                        Proposed Educational Hub Coordinates
+                        <span>Proposed Educational Hub Site</span>
+                        <span className="rec-hint-badge">Click to view site</span>
                       </div>
                       <div className="rec-coords">{rec.newSchool}</div>
                     </div>
                   )}
 
                   {rec.newClinic && (
-                    <div className="rec-item">
+                    <div
+                      className={`rec-item ${activeTarget === "clinic" ? "rec-item-highlight" : ""}`}
+                      onClick={() => setActiveTarget("clinic")}
+                      style={{ cursor: "pointer" }}
+                    >
                       <div className="rec-type">
                         <IconHospital size={13} className="rec-type-icon" />
-                        Proposed Primary Health Clinic Coordinates
+                        <span>Proposed Healthcare Clinic Site</span>
+                        <span className="rec-hint-badge">Click to view site</span>
                       </div>
                       <div className="rec-coords">{rec.newClinic}</div>
                     </div>
