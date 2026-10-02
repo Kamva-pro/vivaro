@@ -29,13 +29,13 @@ const Map = ({ mapCenter, zoomLevel = 6, underservedData, onCommunitySelect }) =
     <MapContainer
       center={mapCenter}
       zoom={zoomLevel}
-      style={{ height: "100%", width: "100%" }} 
+      style={{ height: "100%", width: "100%" }}
       scrollWheelZoom={true}
       zoomControl={false}
     >
       <ChangeView center={mapCenter} zoom={zoomLevel} />
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_47d9_1_8394ff195ee9f29d69813028"
         attribution='&copy; OpenStreetMap contributors &copy; CARTO'
       />
       {underservedData.map(
